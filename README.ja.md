@@ -1,5 +1,7 @@
 # Tab5 FPGA Carrier — Spark
 
+> **主電源改訂中・発注不可。公開中の回路・PCB・解析は旧SW3（FPGA専用停止）構成です。外部12VをTab5とFPGAへ一括ON/OFFするオルタネート主電源は未反映です。Tab5の内蔵バッテリー動作は停止対象に含めません。**
+
 **日本語** · [中文](README.zh.md) · [English](README.md)
 
 **[日中英切替の設計・解析ページ](https://airpocket-soundman.github.io/tab5-fpga-carrier-spark/)**

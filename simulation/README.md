@@ -1,3 +1,5 @@
+> **Legacy design results only.** The172/187 cases do not validate the requested external-main-power revision. No new main-power ON/OFF or inrush result is published.
+
 # EasyEDA Pro simulation records
 
 These published records contain calculations executed **inside the EasyEDA API Gateway client**, using the official NGspice46 WASM from [easyeda/eext-simulation-with-ngspice](https://github.com/easyeda/eext-simulation-with-ngspice/tree/50d2d3928d9e02f0b3617f51419936930629699f). No GUI automation or synthetic simulation-result events produced these results.

@@ -1,5 +1,7 @@
 # Tab5 FPGA Carrier — Spark
 
+> **主电源修订中，禁止下单。当前公开的原理图、PCB及仿真采用旧SW3（仅停止FPGA供电）配置。用于同时接通/切断Tab5和FPGA外部12V供电的自锁主电源尚未反映。Tab5内置电池运行不在切断范围内。**
+
 [日本語](README.ja.md) · **中文** · [English](README.md)
 
 **[日中英切换的设计与仿真页面](https://airpocket-soundman.github.io/tab5-fpga-carrier-spark/)**

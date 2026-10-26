@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-26",
+  "fabrication_released": false,
+  "published_revision": "legacy FPGA-only stop",
+  "requested_revision": "alternate switch controlling external DC12V and USB PD12V feed to Tab5 HVIN and Core converter together",
+  "tab5_battery_shutdown_required": false,
+  "new_pcb_available": false,
+  "new_native_easyeda_available": false,
+  "new_easyeda_power_simulation_available": false,
+  "legacy_simulation_cases": {
+    "full": 172,
+    "lite_a": 187
+  },
+  "legacy_results_validate_new_main_power": false
+}

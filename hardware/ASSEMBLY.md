@@ -1,6 +1,6 @@
 # Assembly review instructions / 組立レビュー / 装配评审
 
-**Engineering quotation candidate. Do not manufacture without preview/DFM, fit and warning review.** Quantities and placement files are per board. The proposed initial quotation is five PCBs with two assemblies, subject to support approval.
+**SUPERSEDED FOR MAIN-POWER REQUIREMENT. DO NOT FABRICATE.** The data below describes the legacy FPGA-only stop circuit; it does not implement the requested latching external-main-power switch. PCB, native EasyEDA and new switch simulations are pending. The old switch is documented only to identify the archived circuit. Quantities and placement files are per board. The proposed initial quotation is five PCBs with two assemblies, subject to support approval.
 
 ## Manufacturer assembly
 
@@ -20,7 +20,7 @@
 5. **JP1 C124375:** fit the1×2 header, but pack the **C5305 shunt separately**, initially absent. Install only after firmware GPIO ownership and power behavior are reviewed.
 6. Four mounting locations on Lite A versus six on Full. Spacer lengths, screw penetration, Core insertion/removal clearance and protective-cover fit remain unvalidated. Do not use an unreviewed cover for ordering.
 
-## First power-on
+## Historical bring-up notes — not instructions for ordering this revision
 
 Keep the Core and Tab5 disconnected while checking shorts, input polarity and regulator outputs. Confirm SW3 stop/run behavior, then proceed with the modules under current-limited power. Initial communication is1MHz with weak drive/SLOW, DATA setup/hold≥250ns each and DIR turnaround≥500ns. Keep ARM unshunted until firmware pin ownership is checked. Lite A local3.3V normal load≤10mA, no external loads; Core normal0.5A is the initial evaluation condition.
 

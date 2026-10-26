@@ -1,5 +1,7 @@
 # Tab5 FPGA Carrier — Spark
 
+> **Main-power revision in progress — do not fabricate. Published schematics, PCBs and simulations use the old SW3 FPGA-only shutdown circuit. The latching main switch that cuts external12V to both Tab5 and FPGA is not yet implemented in these files. Tab5 battery operation remains outside the switch scope.**
+
 [日本語](README.ja.md) · [中文](README.zh.md) · **English**
 
 **[Design notebook / 日中英 GitHub Pages](https://airpocket-soundman.github.io/tab5-fpga-carrier-spark/)**
