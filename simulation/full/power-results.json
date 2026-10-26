@@ -1,0 +1,209 @@
+{
+  "execution": "Official NGspice46 WASM inside EasyEDA API Gateway",
+  "cases": [
+    {
+      "name": "spark-11p4V",
+      "samples": 22617,
+      "vcore_min_valid_input_V": 4.891468745631003,
+      "vcore_max_valid_input_V": 4.99878215261811,
+      "vout_max_V": 5.0357564433265285,
+      "diagnostics": {
+        "errors": [],
+        "warnings": []
+      },
+      "within_numeric_voltage_limits": true,
+      "conditions": {
+        "model": "average",
+        "include_ldo": false,
+        "vin": 11.4,
+        "stop": 0.045,
+        "settled_start": 0.015,
+        "core_baseline": 0.05,
+        "core_load": 0.5,
+        "hdmi_load": 0.06,
+        "tab_load": 1,
+        "path_R": 0.10294088579228776,
+        "contact_R": 0.02,
+        "return_R": 0.03,
+        "dcr": 0.027,
+        "esr": 0.04,
+        "L": 1.5e-05,
+        "cout": 0.00022,
+        "maxstep": 2e-06,
+        "kind": "barrel"
+      }
+    },
+    {
+      "name": "spark-12p6V",
+      "samples": 22619,
+      "vcore_min_valid_input_V": 4.891444286976325,
+      "vcore_max_valid_input_V": 4.998809484392973,
+      "vout_max_V": 5.0357372474414435,
+      "diagnostics": {
+        "errors": [],
+        "warnings": []
+      },
+      "within_numeric_voltage_limits": true,
+      "conditions": {
+        "model": "average",
+        "include_ldo": false,
+        "vin": 12.6,
+        "stop": 0.045,
+        "settled_start": 0.015,
+        "core_baseline": 0.05,
+        "core_load": 0.5,
+        "hdmi_load": 0.06,
+        "tab_load": 1,
+        "path_R": 0.10294088579228776,
+        "contact_R": 0.02,
+        "return_R": 0.03,
+        "dcr": 0.027,
+        "esr": 0.04,
+        "L": 1.5e-05,
+        "cout": 0.00022,
+        "maxstep": 2e-06,
+        "kind": "barrel"
+      }
+    },
+    {
+      "name": "spark-12V-nominal",
+      "samples": 22621,
+      "vcore_min_valid_input_V": 4.8914558818961655,
+      "vcore_max_valid_input_V": 4.998796540868238,
+      "vout_max_V": 5.035742945863138,
+      "diagnostics": {
+        "errors": [],
+        "warnings": []
+      },
+      "within_numeric_voltage_limits": true,
+      "conditions": {
+        "model": "average",
+        "include_ldo": false,
+        "vin": 12,
+        "stop": 0.045,
+        "settled_start": 0.015,
+        "core_baseline": 0.05,
+        "core_load": 0.5,
+        "hdmi_load": 0.06,
+        "tab_load": 1,
+        "path_R": 0.10294088579228776,
+        "contact_R": 0.02,
+        "return_R": 0.03,
+        "dcr": 0.027,
+        "esr": 0.04,
+        "L": 1.5e-05,
+        "cout": 0.00022,
+        "maxstep": 2e-06,
+        "kind": "barrel"
+      }
+    },
+    {
+      "name": "spark-load1A-sensitivity",
+      "samples": 22613,
+      "vcore_min_valid_input_V": 4.812704503022163,
+      "vcore_max_valid_input_V": 4.9320673258701495,
+      "vout_max_V": 5.035718218368409,
+      "diagnostics": {
+        "errors": [],
+        "warnings": []
+      },
+      "within_numeric_voltage_limits": true,
+      "conditions": {
+        "model": "average",
+        "include_ldo": false,
+        "vin": 12,
+        "stop": 0.045,
+        "settled_start": 0.015,
+        "core_baseline": 0.5,
+        "core_load": 1,
+        "hdmi_load": 0.06,
+        "tab_load": 1,
+        "path_R": 0.10294088579228776,
+        "contact_R": 0.02,
+        "return_R": 0.03,
+        "dcr": 0.027,
+        "esr": 0.04,
+        "L": 1.5e-05,
+        "cout": 0.00022,
+        "maxstep": 2e-06,
+        "kind": "barrel"
+      }
+    },
+    {
+      "name": "spark-lowESR-sensitivity",
+      "samples": 22685,
+      "vcore_min_valid_input_V": 4.889534986311956,
+      "vcore_max_valid_input_V": 5.000589910819533,
+      "vout_max_V": 5.037500107668718,
+      "diagnostics": {
+        "errors": [],
+        "warnings": []
+      },
+      "within_numeric_voltage_limits": true,
+      "conditions": {
+        "model": "average",
+        "include_ldo": false,
+        "vin": 12,
+        "stop": 0.045,
+        "settled_start": 0.015,
+        "core_baseline": 0.05,
+        "core_load": 0.5,
+        "hdmi_load": 0.06,
+        "tab_load": 1,
+        "path_R": 0.10294088579228776,
+        "contact_R": 0.02,
+        "return_R": 0.03,
+        "dcr": 0.027,
+        "esr": 0.002,
+        "L": 1.2e-05,
+        "cout": 0.000176,
+        "maxstep": 2e-06,
+        "kind": "barrel",
+        "pwm_tau": 1.25e-06
+      }
+    },
+    {
+      "name": "spark-PD-profile",
+      "samples": 22633,
+      "vcore_min_valid_input_V": 4.891454925442737,
+      "vcore_max_valid_input_V": 4.99879779524708,
+      "vout_max_V": 5.035761170814859,
+      "diagnostics": {
+        "errors": [],
+        "warnings": [
+          "Warning: Value of resistor rptc is too small, set to 1.000000e-12"
+        ]
+      },
+      "within_numeric_voltage_limits": true,
+      "conditions": {
+        "model": "average",
+        "include_ldo": false,
+        "vin": 12,
+        "stop": 0.045,
+        "settled_start": 0.02,
+        "core_baseline": 0.05,
+        "core_load": 0.5,
+        "hdmi_load": 0.06,
+        "tab_load": 1,
+        "path_R": 0.10294088579228776,
+        "contact_R": 0.02,
+        "return_R": 0.03,
+        "dcr": 0.027,
+        "esr": 0.04,
+        "L": 1.5e-05,
+        "cout": 0.00022,
+        "maxstep": 2e-06,
+        "kind": "pd"
+      }
+    }
+  ],
+  "passed": 6,
+  "voltage_limits": {
+    "core_V": [
+      4.5,
+      5.5
+    ],
+    "local_3V3_V": "dynamic model excluded"
+  },
+  "scope": "Analytical equivalent circuits, not automatic simulation of the complete manufacturing schematic. Fitted XC6206 dynamics in Lite A; full switching, thermal and PD-negotiation validation excluded."
+}

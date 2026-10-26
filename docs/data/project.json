@@ -1,0 +1,636 @@
+{
+  "updated": "2026-10-26",
+  "status": "Engineering review / Spark entry preparation. Not fabrication released.",
+  "variants": {
+    "full": {
+      "dimensions": [
+        125,
+        78
+      ],
+      "components": 103,
+      "cases": 172,
+      "bom": [
+        {
+          "refs": "J1",
+          "value": "DC-005-5A-2.0",
+          "quantity": 1,
+          "lcsc": "C381116"
+        },
+        {
+          "refs": "F1",
+          "value": "PTC 3A hold",
+          "quantity": 1,
+          "lcsc": "C47002391"
+        },
+        {
+          "refs": "D1,D2,D4",
+          "value": "SS54",
+          "quantity": 3,
+          "lcsc": "C22452"
+        },
+        {
+          "refs": "D3",
+          "value": "SMBJ15A",
+          "quantity": 1,
+          "lcsc": "C699013"
+        },
+        {
+          "refs": "C1",
+          "value": "100u/35V",
+          "quantity": 1,
+          "lcsc": "C2983388"
+        },
+        {
+          "refs": "J2",
+          "value": "USB-C PD in",
+          "quantity": 1,
+          "lcsc": "C5246813"
+        },
+        {
+          "refs": "U1",
+          "value": "CH224K",
+          "quantity": 1,
+          "lcsc": "C970725"
+        },
+        {
+          "refs": "R1,R36,R37,R52,R6",
+          "value": "10k",
+          "quantity": 5,
+          "lcsc": "C25804"
+        },
+        {
+          "refs": "C2",
+          "value": "1u/50V",
+          "quantity": 1,
+          "lcsc": "C15849"
+        },
+        {
+          "refs": "R2,R42,R43,R44,R45",
+          "value": "1k",
+          "quantity": 5,
+          "lcsc": "C21190"
+        },
+        {
+          "refs": "R3,R5",
+          "value": "0R",
+          "quantity": 2,
+          "lcsc": "C21189"
+        },
+        {
+          "refs": "U2",
+          "value": "TPS5430DDAR",
+          "quantity": 1,
+          "lcsc": "C9864"
+        },
+        {
+          "refs": "C3",
+          "value": "10n",
+          "quantity": 1,
+          "lcsc": "C57112"
+        },
+        {
+          "refs": "L1",
+          "value": "15u/4A",
+          "quantity": 1,
+          "lcsc": "C2041333"
+        },
+        {
+          "refs": "R7",
+          "value": "3.24k",
+          "quantity": 1,
+          "lcsc": "C22994"
+        },
+        {
+          "refs": "R41,R47,R48,R8",
+          "value": "100k",
+          "quantity": 4,
+          "lcsc": "C25803"
+        },
+        {
+          "refs": "R9",
+          "value": "15k",
+          "quantity": 1,
+          "lcsc": "C22809"
+        },
+        {
+          "refs": "C4,C5",
+          "value": "10u/50V",
+          "quantity": 2,
+          "lcsc": "C13585"
+        },
+        {
+          "refs": "C6",
+          "value": "100n/50V",
+          "quantity": 1,
+          "lcsc": "C14663"
+        },
+        {
+          "refs": "C7",
+          "value": "220u/10V POSCAP",
+          "quantity": 1,
+          "lcsc": "C242173"
+        },
+        {
+          "refs": "U3",
+          "value": "TLV1117LV33DCYR",
+          "quantity": 1,
+          "lcsc": "C15578"
+        },
+        {
+          "refs": "C10",
+          "value": "10u/16V",
+          "quantity": 1,
+          "lcsc": "C13585"
+        },
+        {
+          "refs": "C11",
+          "value": "22u/10V",
+          "quantity": 1,
+          "lcsc": "C12891"
+        },
+        {
+          "refs": "J3",
+          "value": "2.54-2*15P",
+          "quantity": 1,
+          "lcsc": "C56496"
+        },
+        {
+          "refs": "R10,R11,R12,R13,R14,R15,R16,R19,R20,R21,R22,R23,R24,R26,R27",
+          "value": "680R",
+          "quantity": 15,
+          "lcsc": "C23228"
+        },
+        {
+          "refs": "J4",
+          "value": "SOCKET XDAP-4042044-20401",
+          "quantity": 1,
+          "lcsc": "C22471982"
+        },
+        {
+          "refs": "J5",
+          "value": "HDMI OUT",
+          "quantity": 1,
+          "lcsc": "C916313"
+        },
+        {
+          "refs": "C12,C13,C14,C15,C16,C17,C18,C19",
+          "value": "100n",
+          "quantity": 8,
+          "lcsc": "C1525"
+        },
+        {
+          "refs": "R28,R29,R32,R33,R34,R35",
+          "value": "499R",
+          "quantity": 6,
+          "lcsc": "C23065"
+        },
+        {
+          "refs": "R30,R31",
+          "value": "499R",
+          "quantity": 2,
+          "lcsc": "C4125"
+        },
+        {
+          "refs": "U4,U5,U6",
+          "value": "RCLAMP0524P",
+          "quantity": 3,
+          "lcsc": "C293965"
+        },
+        {
+          "refs": "F2",
+          "value": "PTC 500mA",
+          "quantity": 1,
+          "lcsc": "C315893"
+        },
+        {
+          "refs": "Q1,Q2,Q3,Q4",
+          "value": "2N7002",
+          "quantity": 4,
+          "lcsc": "C8545"
+        },
+        {
+          "refs": "R38,R39",
+          "value": "2.2k",
+          "quantity": 2,
+          "lcsc": "C4190"
+        },
+        {
+          "refs": "R40,R51",
+          "value": "47k",
+          "quantity": 2,
+          "lcsc": "C25819"
+        },
+        {
+          "refs": "D5,D6,D7,D8",
+          "value": "LED",
+          "quantity": 4,
+          "lcsc": "C2286"
+        },
+        {
+          "refs": "SW1,SW2",
+          "value": "TS-1102S-B-D-B",
+          "quantity": 2,
+          "lcsc": "C480272"
+        },
+        {
+          "refs": "SW3",
+          "value": "DS-02BLP",
+          "quantity": 1,
+          "lcsc": "C692500"
+        },
+        {
+          "refs": "U7,U8",
+          "value": "SN74CB3Q3245PWR",
+          "quantity": 2,
+          "lcsc": "C470961"
+        },
+        {
+          "refs": "C20,C21,C22,C23,C24",
+          "value": "100n",
+          "quantity": 5,
+          "lcsc": "C14663"
+        },
+        {
+          "refs": "U9",
+          "value": "TPS3839G33DBZR",
+          "quantity": 1,
+          "lcsc": "C485802"
+        },
+        {
+          "refs": "U10",
+          "value": "TPS3839K50DBZR",
+          "quantity": 1,
+          "lcsc": "C702204"
+        },
+        {
+          "refs": "JP1",
+          "value": "B-2100S02P-A110",
+          "quantity": 1,
+          "lcsc": "C124375"
+        },
+        {
+          "refs": "R46",
+          "value": "22k",
+          "quantity": 1,
+          "lcsc": "C31850"
+        },
+        {
+          "refs": "Q5",
+          "value": "MMBT3904",
+          "quantity": 1,
+          "lcsc": "C20526"
+        }
+      ],
+      "power": {
+        "cases": 6,
+        "pass": 6
+      },
+      "link": {
+        "cases": 150,
+        "receiverPass": 150,
+        "driverPass": 60,
+        "maxSettleNs": 91.38782743959577
+      },
+      "periodic": {
+        "cases": 16,
+        "oneMHzPass": 4
+      },
+      "files": {
+        "native": "hardware/full/spark-lcsc-priority-review.epro2",
+        "gerbers": "hardware/full/gerbers.zip",
+        "bom": "hardware/full/bom.csv",
+        "assembly": "hardware/full/assembly-top.svg"
+      },
+      "native": {
+        "native_project_sha256": "69fb924008407e4fcaa3fe319c920a7028f84e411bf66862523c130bd4ce0349",
+        "components": 103,
+        "bom_rows": 45,
+        "board_dimensions_mm": [
+          125,
+          78
+        ],
+        "pcba_status": "quotation candidate; supplier acceptance pending",
+        "pcb_drc_violations": 0,
+        "schematic_fatal_errors": 0,
+        "schematic_warnings": 13,
+        "connected_schematic_pins_verified": 482,
+        "checks_scope": "Native project connectivity, component values, copper pad positions, track/via net and geometry cross-checks. Physical fit, full DFM and warning classification pending."
+      }
+    },
+    "lite-a": {
+      "dimensions": [
+        99,
+        78
+      ],
+      "components": 105,
+      "cases": 187,
+      "bom": [
+        {
+          "refs": "J1",
+          "value": "DC-005-5A-2.0",
+          "quantity": 1,
+          "lcsc": "C381116"
+        },
+        {
+          "refs": "F1",
+          "value": "PTC 3A hold",
+          "quantity": 1,
+          "lcsc": "C47002391"
+        },
+        {
+          "refs": "D1,D2,D4",
+          "value": "SS54",
+          "quantity": 3,
+          "lcsc": "C22452"
+        },
+        {
+          "refs": "D3",
+          "value": "SMBJ15A",
+          "quantity": 1,
+          "lcsc": "C699013"
+        },
+        {
+          "refs": "C1",
+          "value": "100u/35V",
+          "quantity": 1,
+          "lcsc": "C2983388"
+        },
+        {
+          "refs": "J2",
+          "value": "USB-C PD in",
+          "quantity": 1,
+          "lcsc": "C5246813"
+        },
+        {
+          "refs": "U1",
+          "value": "CH224K",
+          "quantity": 1,
+          "lcsc": "C970725"
+        },
+        {
+          "refs": "R1,R36,R37,R52,R6",
+          "value": "10k",
+          "quantity": 5,
+          "lcsc": "C25804"
+        },
+        {
+          "refs": "C2",
+          "value": "1u/50V",
+          "quantity": 1,
+          "lcsc": "C15849"
+        },
+        {
+          "refs": "R2,R42,R43,R44,R45",
+          "value": "1k",
+          "quantity": 5,
+          "lcsc": "C21190"
+        },
+        {
+          "refs": "R3,R5",
+          "value": "0R",
+          "quantity": 2,
+          "lcsc": "C21189"
+        },
+        {
+          "refs": "U2",
+          "value": "TPS5430DDAR",
+          "quantity": 1,
+          "lcsc": "C9864"
+        },
+        {
+          "refs": "C3",
+          "value": "10n",
+          "quantity": 1,
+          "lcsc": "C57112"
+        },
+        {
+          "refs": "L1",
+          "value": "15u MS1040-150M",
+          "quantity": 1,
+          "lcsc": "C380054"
+        },
+        {
+          "refs": "R7",
+          "value": "3.3k",
+          "quantity": 1,
+          "lcsc": "C22978"
+        },
+        {
+          "refs": "R41,R47,R48,R49,R50,R8",
+          "value": "100k",
+          "quantity": 6,
+          "lcsc": "C25803"
+        },
+        {
+          "refs": "R9",
+          "value": "15k",
+          "quantity": 1,
+          "lcsc": "C22809"
+        },
+        {
+          "refs": "C4,C5",
+          "value": "10u/50V",
+          "quantity": 2,
+          "lcsc": "C13585"
+        },
+        {
+          "refs": "C6",
+          "value": "100n/50V",
+          "quantity": 1,
+          "lcsc": "C14663"
+        },
+        {
+          "refs": "C7",
+          "value": "220u/10V POSCAP",
+          "quantity": 1,
+          "lcsc": "C242173"
+        },
+        {
+          "refs": "U3",
+          "value": "XC6206P332MR-G",
+          "quantity": 1,
+          "lcsc": "C5446"
+        },
+        {
+          "refs": "C10",
+          "value": "10u/16V",
+          "quantity": 1,
+          "lcsc": "C13585"
+        },
+        {
+          "refs": "C11",
+          "value": "22u/10V",
+          "quantity": 1,
+          "lcsc": "C12891"
+        },
+        {
+          "refs": "J3",
+          "value": "2.54-2*15P",
+          "quantity": 1,
+          "lcsc": "C56496"
+        },
+        {
+          "refs": "R10,R11,R12,R13,R14,R15,R16,R19,R20,R21,R22,R23,R24,R26,R27",
+          "value": "680R",
+          "quantity": 15,
+          "lcsc": "C23228"
+        },
+        {
+          "refs": "J4",
+          "value": "SOCKET XDAP-4042044-20401",
+          "quantity": 1,
+          "lcsc": "C22471982"
+        },
+        {
+          "refs": "J5",
+          "value": "HDMI OUT",
+          "quantity": 1,
+          "lcsc": "C916313"
+        },
+        {
+          "refs": "C12,C13,C14,C15,C16,C17,C18,C19",
+          "value": "100n",
+          "quantity": 8,
+          "lcsc": "C1525"
+        },
+        {
+          "refs": "R28,R29,R32,R33,R34,R35",
+          "value": "510R",
+          "quantity": 6,
+          "lcsc": "C23193"
+        },
+        {
+          "refs": "R30,R31",
+          "value": "510R",
+          "quantity": 2,
+          "lcsc": "C25123"
+        },
+        {
+          "refs": "U4,U5,U6",
+          "value": "RCLAMP0524P",
+          "quantity": 3,
+          "lcsc": "C293965"
+        },
+        {
+          "refs": "F2",
+          "value": "PTC 500mA",
+          "quantity": 1,
+          "lcsc": "C315893"
+        },
+        {
+          "refs": "Q1,Q2,Q3,Q4",
+          "value": "2N7002",
+          "quantity": 4,
+          "lcsc": "C8545"
+        },
+        {
+          "refs": "R38,R39",
+          "value": "2.2k",
+          "quantity": 2,
+          "lcsc": "C4190"
+        },
+        {
+          "refs": "R40,R51",
+          "value": "47k",
+          "quantity": 2,
+          "lcsc": "C25819"
+        },
+        {
+          "refs": "D5,D6,D7,D8",
+          "value": "LED",
+          "quantity": 4,
+          "lcsc": "C2286"
+        },
+        {
+          "refs": "SW1,SW2",
+          "value": "TS-1187A-B-A-B",
+          "quantity": 2,
+          "lcsc": "C318884"
+        },
+        {
+          "refs": "SW3",
+          "value": "DS-02BLP",
+          "quantity": 1,
+          "lcsc": "C692500"
+        },
+        {
+          "refs": "U7,U8",
+          "value": "SN74CB3Q3245PWR",
+          "quantity": 2,
+          "lcsc": "C470961"
+        },
+        {
+          "refs": "C20,C21,C22,C23,C24",
+          "value": "100n",
+          "quantity": 5,
+          "lcsc": "C14663"
+        },
+        {
+          "refs": "U9",
+          "value": "TPS3839G33DBZR",
+          "quantity": 1,
+          "lcsc": "C485802"
+        },
+        {
+          "refs": "U10",
+          "value": "TPS3839K50DBZR",
+          "quantity": 1,
+          "lcsc": "C702204"
+        },
+        {
+          "refs": "JP1",
+          "value": "B-2100S02P-A110",
+          "quantity": 1,
+          "lcsc": "C124375"
+        },
+        {
+          "refs": "R46",
+          "value": "22k",
+          "quantity": 1,
+          "lcsc": "C31850"
+        },
+        {
+          "refs": "Q5",
+          "value": "MMBT3904",
+          "quantity": 1,
+          "lcsc": "C20526"
+        }
+      ],
+      "power": {
+        "cases": 21,
+        "pass": 19
+      },
+      "link": {
+        "cases": 150,
+        "receiverPass": 150,
+        "driverPass": 60,
+        "maxSettleNs": 89.6878295745652
+      },
+      "periodic": {
+        "cases": 16,
+        "oneMHzPass": 4
+      },
+      "files": {
+        "native": "hardware/lite-a/spark-lite-a-lcsc-review.epro2",
+        "gerbers": "hardware/lite-a/gerbers.zip",
+        "bom": "hardware/lite-a/bom.csv",
+        "assembly": "hardware/lite-a/assembly-top.svg"
+      },
+      "native": {
+        "native_project_sha256": "def6f0610fecbd016b7b88bbdbdb9167fb2299d79f81ad63ea5e09afdd639d31",
+        "components": 105,
+        "bom_rows": 45,
+        "board_dimensions_mm": [
+          99,
+          78
+        ],
+        "pcba_status": "quotation candidate; supplier acceptance pending",
+        "pcb_drc_violations": 0,
+        "schematic_fatal_errors": 0,
+        "schematic_warnings": 13,
+        "connected_schematic_pins_verified": 486,
+        "checks_scope": "Native project connectivity, component values, copper pad positions, track/via net and geometry cross-checks. Physical fit, full DFM and warning classification pending."
+      }
+    }
+  }
+}

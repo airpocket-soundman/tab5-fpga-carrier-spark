@@ -1,0 +1,15 @@
+{
+  "native_project_sha256": "def6f0610fecbd016b7b88bbdbdb9167fb2299d79f81ad63ea5e09afdd639d31",
+  "components": 105,
+  "bom_rows": 45,
+  "board_dimensions_mm": [
+    99,
+    78
+  ],
+  "pcba_status": "quotation candidate; supplier acceptance pending",
+  "pcb_drc_violations": 0,
+  "schematic_fatal_errors": 0,
+  "schematic_warnings": 13,
+  "connected_schematic_pins_verified": 486,
+  "checks_scope": "Native project connectivity, component values, copper pad positions, track/via net and geometry cross-checks. Physical fit, full DFM and warning classification pending."
+}

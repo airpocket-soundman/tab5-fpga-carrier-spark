@@ -1,0 +1,165 @@
+{
+  "cases": [
+    {
+      "name": "periodic-1000000-fast-read",
+      "freq_Hz": 1000000,
+      "corner": "fast",
+      "direction": "read",
+      "samples": 30101,
+      "sample_high_min_V": 3.465273361600305,
+      "sample_low_max_V": -0.00014868854108309975,
+      "threshold_ok": true
+    },
+    {
+      "name": "periodic-1000000-fast-write",
+      "freq_Hz": 1000000,
+      "corner": "fast",
+      "direction": "write",
+      "samples": 30101,
+      "sample_high_min_V": 3.4649963425025776,
+      "sample_low_max_V": 1.4119674214370924e-06,
+      "threshold_ok": true
+    },
+    {
+      "name": "periodic-1000000-slow-read",
+      "freq_Hz": 1000000,
+      "corner": "slow",
+      "direction": "read",
+      "samples": 30101,
+      "sample_high_min_V": 3.13445662907007,
+      "sample_low_max_V": 0.0007129666497354601,
+      "threshold_ok": true
+    },
+    {
+      "name": "periodic-1000000-slow-write",
+      "freq_Hz": 1000000,
+      "corner": "slow",
+      "direction": "write",
+      "samples": 30101,
+      "sample_high_min_V": 3.1349903871257108,
+      "sample_low_max_V": 6.1645571238610825e-06,
+      "threshold_ok": true
+    },
+    {
+      "name": "periodic-10000000-fast-read",
+      "freq_Hz": 10000000,
+      "corner": "fast",
+      "direction": "read",
+      "samples": 3101,
+      "sample_high_min_V": 2.96066249674441,
+      "sample_low_max_V": 0.6291073999622964,
+      "threshold_ok": true
+    },
+    {
+      "name": "periodic-10000000-fast-write",
+      "freq_Hz": 10000000,
+      "corner": "fast",
+      "direction": "write",
+      "samples": 3101,
+      "sample_high_min_V": 3.0749282382939027,
+      "sample_low_max_V": 0.4023521178833803,
+      "threshold_ok": true
+    },
+    {
+      "name": "periodic-10000000-slow-read",
+      "freq_Hz": 10000000,
+      "corner": "slow",
+      "direction": "read",
+      "samples": 3101,
+      "sample_high_min_V": 1.5882168473179452,
+      "sample_low_max_V": 1.8444038976410242,
+      "threshold_ok": false
+    },
+    {
+      "name": "periodic-10000000-slow-write",
+      "freq_Hz": 10000000,
+      "corner": "slow",
+      "direction": "write",
+      "samples": 3101,
+      "sample_high_min_V": 2.2209173288522415,
+      "sample_low_max_V": 1.554372734649075,
+      "threshold_ok": false
+    },
+    {
+      "name": "periodic-20000000-fast-read",
+      "freq_Hz": 20000000,
+      "corner": "fast",
+      "direction": "read",
+      "samples": 1601,
+      "sample_high_min_V": 2.2097482195546467,
+      "sample_low_max_V": 0.9108035687197434,
+      "threshold_ok": false
+    },
+    {
+      "name": "periodic-20000000-fast-write",
+      "freq_Hz": 20000000,
+      "corner": "fast",
+      "direction": "write",
+      "samples": 1601,
+      "sample_high_min_V": 2.282205753576985,
+      "sample_low_max_V": 1.1039001257296344,
+      "threshold_ok": false
+    },
+    {
+      "name": "periodic-20000000-slow-read",
+      "freq_Hz": 20000000,
+      "corner": "slow",
+      "direction": "read",
+      "samples": 1601,
+      "sample_high_min_V": 0.7277135700850637,
+      "sample_low_max_V": 2.496729626246752,
+      "threshold_ok": false
+    },
+    {
+      "name": "periodic-20000000-slow-write",
+      "freq_Hz": 20000000,
+      "corner": "slow",
+      "direction": "write",
+      "samples": 1601,
+      "sample_high_min_V": 0.9955410718532053,
+      "sample_low_max_V": 2.7891274828586647,
+      "threshold_ok": false
+    },
+    {
+      "name": "periodic-40000000-fast-read",
+      "freq_Hz": 40000000,
+      "corner": "fast",
+      "direction": "read",
+      "samples": 851,
+      "sample_high_min_V": 1.0333491084368764,
+      "sample_low_max_V": 2.1931475996852003,
+      "threshold_ok": false
+    },
+    {
+      "name": "periodic-40000000-fast-write",
+      "freq_Hz": 40000000,
+      "corner": "fast",
+      "direction": "write",
+      "samples": 851,
+      "sample_high_min_V": 1.3663396065317504,
+      "sample_low_max_V": 1.7542887387367072,
+      "threshold_ok": false
+    },
+    {
+      "name": "periodic-40000000-slow-read",
+      "freq_Hz": 40000000,
+      "corner": "slow",
+      "direction": "read",
+      "samples": 851,
+      "sample_high_min_V": 0.17697114273806794,
+      "sample_low_max_V": 2.322675051794932,
+      "threshold_ok": false
+    },
+    {
+      "name": "periodic-40000000-slow-write",
+      "freq_Hz": 40000000,
+      "corner": "slow",
+      "direction": "write",
+      "samples": 851,
+      "sample_high_min_V": 0.1891874546311969,
+      "sample_low_max_V": 2.5788781797597076,
+      "threshold_ok": false
+    }
+  ],
+  "scope": "Solver equations and .tran settings retained. After solving, output is linearized at100ps to stay within the WASM vector export limit. No hardware throughput claim."
+}

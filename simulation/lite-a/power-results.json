@@ -1,0 +1,531 @@
+{
+  "execution": "Official NGspice46 WASM inside EasyEDA API Gateway",
+  "cases": [
+    {
+      "name": "spark-lite-a-combined-loop-worst",
+      "vcore_min_valid_input_V": 4.690862283049069,
+      "vcore_max_valid_input_V": 4.815639963616795,
+      "v33_min_valid_input_V": 3.299994109816894,
+      "v33_max_valid_input_V": 3.300003833526504,
+      "vout_max_V": 4.853318130215533,
+      "within_numeric_voltage_limits": true,
+      "diagnostics": {
+        "errors": [],
+        "warnings": []
+      },
+      "conditions": {
+        "path_R": 0.13674453593189015,
+        "hdmi_load": 0.05,
+        "ldo_trace_L": 6e-09,
+        "ldo_trace_R": 0.011,
+        "vin": 11.4,
+        "vref": 1.196,
+        "rtop_mult": 0.99,
+        "rbot_mult": 1.01,
+        "esr": 0.002,
+        "cout": 0.000176,
+        "L": 1.2e-05,
+        "pwm_tau": 1.25e-06
+      }
+    },
+    {
+      "name": "spark-lite-a-high-supply-hot",
+      "vcore_min_valid_input_V": 5.026771545179817,
+      "vcore_max_valid_input_V": 5.1616711466327,
+      "v33_min_valid_input_V": 3.3659973774533936,
+      "v33_max_valid_input_V": 3.3660040821451354,
+      "vout_max_V": 5.2081582348319975,
+      "within_numeric_voltage_limits": true,
+      "diagnostics": {
+        "errors": [],
+        "warnings": []
+      },
+      "conditions": {
+        "path_R": 0.17167592763569148,
+        "hdmi_load": 0.05,
+        "ldo_trace_L": 6e-09,
+        "ldo_trace_R": 0.011,
+        "vin": 12.6,
+        "temp": 50,
+        "cout": 0.000264,
+        "L": 1.8e-05,
+        "esr": 0.01,
+        "dcr": 0.0505,
+        "vref": 1.245,
+        "rtop_mult": 1.01,
+        "rbot_mult": 0.99,
+        "ldo_ref_mult": 1.02
+      }
+    },
+    {
+      "name": "spark-lite-a-ldo-50mA-sensitivity",
+      "vcore_min_valid_input_V": 4.869239490857112,
+      "vcore_max_valid_input_V": 4.987753510202695,
+      "v33_min_valid_input_V": 3.0200941717978593,
+      "v33_max_valid_input_V": 3.364429693694623,
+      "vout_max_V": 5.028367580702178,
+      "within_numeric_voltage_limits": false,
+      "diagnostics": {
+        "errors": [],
+        "warnings": []
+      },
+      "conditions": {
+        "path_R": 0.13674453593189015,
+        "hdmi_load": 0.05,
+        "ldo_trace_L": 6e-09,
+        "ldo_trace_R": 0.011,
+        "ldo_load": 0.05,
+        "c33": 1.76e-05,
+        "ldo_ref_mult": 0.98
+      }
+    },
+    {
+      "name": "spark-lite-a-ldo-DCbias-minimum",
+      "vcore_min_valid_input_V": 4.869270767432975,
+      "vcore_max_valid_input_V": 4.987465179408258,
+      "v33_min_valid_input_V": 3.151348634658789,
+      "v33_max_valid_input_V": 3.297144589747331,
+      "vout_max_V": 5.028342372780076,
+      "within_numeric_voltage_limits": true,
+      "diagnostics": {
+        "errors": [],
+        "warnings": []
+      },
+      "conditions": {
+        "path_R": 0.13674453593189015,
+        "hdmi_load": 0.05,
+        "ldo_trace_L": 6e-09,
+        "ldo_trace_R": 0.011,
+        "ldo_minimum_steps": true,
+        "ldo_ref_mult": 0.98,
+        "c33": 6.6e-06,
+        "ldo_loop_mult": 0.5
+      }
+    },
+    {
+      "name": "spark-lite-a-ldo-loop-fast",
+      "vcore_min_valid_input_V": 4.869359008168904,
+      "vcore_max_valid_input_V": 4.987753398274428,
+      "v33_min_valid_input_V": 3.2591569066582924,
+      "v33_max_valid_input_V": 3.4310120628065444,
+      "vout_max_V": 5.02836425485226,
+      "within_numeric_voltage_limits": true,
+      "diagnostics": {
+        "errors": [],
+        "warnings": []
+      },
+      "conditions": {
+        "path_R": 0.13674453593189015,
+        "hdmi_load": 0.05,
+        "ldo_trace_L": 6e-09,
+        "ldo_trace_R": 0.011,
+        "ldo_loop_mult": 2.0,
+        "ldo_load": 0.05,
+        "c33": 1.76e-05,
+        "ldo_ref_mult": 1.02
+      }
+    },
+    {
+      "name": "spark-lite-a-ldo-loop-slow",
+      "vcore_min_valid_input_V": 4.869202297165147,
+      "vcore_max_valid_input_V": 4.987762665857482,
+      "v33_min_valid_input_V": 2.805956697158085,
+      "v33_max_valid_input_V": 3.4952778858061095,
+      "vout_max_V": 5.028344657696628,
+      "within_numeric_voltage_limits": false,
+      "diagnostics": {
+        "errors": [],
+        "warnings": []
+      },
+      "conditions": {
+        "path_R": 0.13674453593189015,
+        "hdmi_load": 0.05,
+        "ldo_trace_L": 6e-09,
+        "ldo_trace_R": 0.011,
+        "ldo_loop_mult": 0.5,
+        "ldo_load": 0.05,
+        "c33": 1.76e-05,
+        "ldo_ref_mult": 0.98
+      }
+    },
+    {
+      "name": "spark-lite-a-ldo-minimum-load-steps",
+      "vcore_min_valid_input_V": 4.869244359638521,
+      "vcore_max_valid_input_V": 4.9874596597273815,
+      "v33_min_valid_input_V": 3.2000179410398375,
+      "v33_max_valid_input_V": 3.293589161022344,
+      "vout_max_V": 5.028362210327428,
+      "within_numeric_voltage_limits": true,
+      "diagnostics": {
+        "errors": [],
+        "warnings": []
+      },
+      "conditions": {
+        "path_R": 0.13674453593189015,
+        "hdmi_load": 0.05,
+        "ldo_trace_L": 6e-09,
+        "ldo_trace_R": 0.011,
+        "ldo_minimum_steps": true,
+        "ldo_ref_mult": 0.98,
+        "c33": 1.76e-05
+      }
+    },
+    {
+      "name": "spark-lite-a-ldo-minimum-slow-loop",
+      "vcore_min_valid_input_V": 4.869266159708533,
+      "vcore_max_valid_input_V": 4.9874706150609285,
+      "v33_min_valid_input_V": 3.178260520408846,
+      "v33_max_valid_input_V": 3.3570305155786393,
+      "vout_max_V": 5.028338442480933,
+      "within_numeric_voltage_limits": true,
+      "diagnostics": {
+        "errors": [],
+        "warnings": []
+      },
+      "conditions": {
+        "path_R": 0.13674453593189015,
+        "hdmi_load": 0.05,
+        "ldo_trace_L": 6e-09,
+        "ldo_trace_R": 0.011,
+        "ldo_minimum_steps": true,
+        "ldo_ref_mult": 0.98,
+        "c33": 1.76e-05,
+        "ldo_loop_mult": 0.5
+      }
+    },
+    {
+      "name": "spark-lite-a-low-esr-sensitivity",
+      "vcore_min_valid_input_V": 4.866966547419096,
+      "vcore_max_valid_input_V": 4.989626426310785,
+      "v33_min_valid_input_V": 3.2999974683704085,
+      "v33_max_valid_input_V": 3.3000039407151593,
+      "vout_max_V": 5.031785360624153,
+      "within_numeric_voltage_limits": true,
+      "diagnostics": {
+        "errors": [],
+        "warnings": []
+      },
+      "conditions": {
+        "path_R": 0.13674453593189015,
+        "hdmi_load": 0.05,
+        "ldo_trace_L": 6e-09,
+        "ldo_trace_R": 0.011,
+        "esr": 0.002,
+        "cout": 0.000264,
+        "L": 1.8e-05
+      }
+    },
+    {
+      "name": "spark-lite-a-low-supply-cold",
+      "vcore_min_valid_input_V": 4.694864335383186,
+      "vcore_max_valid_input_V": 4.811927240804514,
+      "v33_min_valid_input_V": 3.2339958196156045,
+      "v33_max_valid_input_V": 3.2340037990278447,
+      "vout_max_V": 4.851106746374052,
+      "within_numeric_voltage_limits": true,
+      "diagnostics": {
+        "errors": [],
+        "warnings": []
+      },
+      "conditions": {
+        "path_R": 0.13674453593189015,
+        "hdmi_load": 0.05,
+        "ldo_trace_L": 6e-09,
+        "ldo_trace_R": 0.011,
+        "vin": 11.4,
+        "temp": 0,
+        "rsource": 0.5,
+        "rptc": 0.1,
+        "cout": 0.000176,
+        "L": 1.2e-05,
+        "esr": 0.04,
+        "cin_bulk": 8e-05,
+        "cin_ceramic": 8e-06,
+        "vref": 1.196,
+        "rtop_mult": 0.99,
+        "rbot_mult": 1.01,
+        "ldo_ref_mult": 0.98
+      }
+    },
+    {
+      "name": "spark-lite-a-nominal",
+      "vcore_min_valid_input_V": 4.869361675737782,
+      "vcore_max_valid_input_V": 4.987465007416706,
+      "v33_min_valid_input_V": 3.2999974683630953,
+      "v33_max_valid_input_V": 3.3000039407519397,
+      "vout_max_V": 5.028333461253583,
+      "within_numeric_voltage_limits": true,
+      "diagnostics": {
+        "errors": [],
+        "warnings": []
+      },
+      "conditions": {
+        "path_R": 0.13674453593189015,
+        "hdmi_load": 0.05,
+        "ldo_trace_L": 6e-09,
+        "ldo_trace_R": 0.011
+      }
+    },
+    {
+      "name": "spark-lite-a-one-amp-step",
+      "vcore_min_valid_input_V": 4.542108259438609,
+      "vcore_max_valid_input_V": 4.8341567671703976,
+      "v33_min_valid_input_V": 3.2999940331154827,
+      "v33_max_valid_input_V": 3.3000038336398636,
+      "vout_max_V": 4.851906984506593,
+      "within_numeric_voltage_limits": true,
+      "diagnostics": {
+        "errors": [],
+        "warnings": []
+      },
+      "conditions": {
+        "path_R": 0.17167592763569148,
+        "hdmi_load": 0.05,
+        "ldo_trace_L": 6e-09,
+        "ldo_trace_R": 0.011,
+        "core_load": 1.0,
+        "cout": 0.000176,
+        "L": 1.8e-05,
+        "esr": 0.04,
+        "vref": 1.196,
+        "rtop_mult": 0.99,
+        "rbot_mult": 1.01,
+        "rsource": 0.5
+      }
+    },
+    {
+      "name": "spark-lite-a-PD-high-ENA",
+      "vcore_min_valid_input_V": 4.869365886842206,
+      "vcore_max_valid_input_V": 4.987465206905016,
+      "v33_min_valid_input_V": 3.299912741498794,
+      "v33_max_valid_input_V": 3.3000560572526494,
+      "vout_max_V": 5.0283253999664534,
+      "within_numeric_voltage_limits": true,
+      "diagnostics": {
+        "errors": [],
+        "warnings": [
+          "Warning: Value of resistor rptc is too small, set to 1.000000e-12"
+        ]
+      },
+      "conditions": {
+        "path_R": 0.13674453593189015,
+        "hdmi_load": 0.05,
+        "ldo_trace_L": 6e-09,
+        "ldo_trace_R": 0.011,
+        "kind": "pd",
+        "stop": 0.045,
+        "settled_start": 0.02,
+        "en_threshold": 1.3,
+        "en_hysteresis": 0.325
+      }
+    },
+    {
+      "name": "spark-lite-a-PD-low-ENA",
+      "vcore_min_valid_input_V": 4.869326051057837,
+      "vcore_max_valid_input_V": 4.987465206904919,
+      "v33_min_valid_input_V": 3.2999989549198157,
+      "v33_max_valid_input_V": 3.300001376741387,
+      "vout_max_V": 5.028340417743202,
+      "within_numeric_voltage_limits": true,
+      "diagnostics": {
+        "errors": [],
+        "warnings": [
+          "Warning: Value of resistor rptc is too small, set to 1.000000e-12"
+        ]
+      },
+      "conditions": {
+        "path_R": 0.13674453593189015,
+        "hdmi_load": 0.05,
+        "ldo_trace_L": 6e-09,
+        "ldo_trace_R": 0.011,
+        "kind": "pd",
+        "stop": 0.045,
+        "settled_start": 0.02,
+        "en_threshold": 1.0,
+        "en_hysteresis": 0.325
+      }
+    },
+    {
+      "name": "spark-lite-a-PD-stairs",
+      "vcore_min_valid_input_V": 4.8693260595226135,
+      "vcore_max_valid_input_V": 4.9874652069050285,
+      "v33_min_valid_input_V": 3.299998955253164,
+      "v33_max_valid_input_V": 3.300001618504406,
+      "vout_max_V": 5.028365608792092,
+      "within_numeric_voltage_limits": true,
+      "diagnostics": {
+        "errors": [],
+        "warnings": [
+          "Warning: Value of resistor rptc is too small, set to 1.000000e-12"
+        ]
+      },
+      "conditions": {
+        "path_R": 0.13674453593189015,
+        "hdmi_load": 0.05,
+        "ldo_trace_L": 6e-09,
+        "ldo_trace_R": 0.011,
+        "kind": "pd",
+        "stop": 0.045,
+        "settled_start": 0.02
+      }
+    },
+    {
+      "name": "spark-lite-a-slow-input-ramp",
+      "vcore_min_valid_input_V": 4.970329741839331,
+      "vcore_max_valid_input_V": 4.970329741839542,
+      "v33_min_valid_input_V": 3.2999999999744833,
+      "v33_max_valid_input_V": 3.3000000000396703,
+      "vout_max_V": 5.0283267913088805,
+      "within_numeric_voltage_limits": true,
+      "diagnostics": {
+        "errors": [],
+        "warnings": []
+      },
+      "conditions": {
+        "path_R": 0.13674453593189015,
+        "hdmi_load": 0.05,
+        "ldo_trace_L": 6e-09,
+        "ldo_trace_R": 0.011,
+        "ramp": 0.02,
+        "stop": 0.06,
+        "settled_start": 0.04
+      }
+    },
+    {
+      "name": "spark-lite-a-softstart-fast",
+      "vcore_min_valid_input_V": 4.869306108146116,
+      "vcore_max_valid_input_V": 4.98746500741621,
+      "v33_min_valid_input_V": 3.2999994643488413,
+      "v33_max_valid_input_V": 3.300000833781641,
+      "vout_max_V": 5.051775600159191,
+      "within_numeric_voltage_limits": true,
+      "diagnostics": {
+        "errors": [],
+        "warnings": []
+      },
+      "conditions": {
+        "path_R": 0.13674453593189015,
+        "hdmi_load": 0.05,
+        "ldo_trace_L": 6e-09,
+        "ldo_trace_R": 0.011,
+        "softstart": 0.0054
+      }
+    },
+    {
+      "name": "spark-lite-a-softstart-slow",
+      "vcore_min_valid_input_V": 4.869301559629996,
+      "vcore_max_valid_input_V": 4.987465007416555,
+      "v33_min_valid_input_V": 3.2999880802622075,
+      "v33_max_valid_input_V": 3.300016503563886,
+      "vout_max_V": 5.018606634916114,
+      "within_numeric_voltage_limits": true,
+      "diagnostics": {
+        "errors": [],
+        "warnings": []
+      },
+      "conditions": {
+        "path_R": 0.13674453593189015,
+        "hdmi_load": 0.05,
+        "ldo_trace_L": 6e-09,
+        "ldo_trace_R": 0.011,
+        "softstart": 0.01
+      }
+    },
+    {
+      "name": "spark-lite-a-switch-cycle",
+      "vcore_min_valid_input_V": 4.869361675737782,
+      "vcore_max_valid_input_V": 4.970330082411172,
+      "v33_min_valid_input_V": 3.299787089174976,
+      "v33_max_valid_input_V": 3.300136777729812,
+      "vout_max_V": 5.028337988186793,
+      "within_numeric_voltage_limits": true,
+      "diagnostics": {
+        "errors": [],
+        "warnings": []
+      },
+      "conditions": {
+        "path_R": 0.13674453593189015,
+        "hdmi_load": 0.05,
+        "ldo_trace_L": 6e-09,
+        "ldo_trace_R": 0.011,
+        "switch_off": true,
+        "stop": 0.055
+      }
+    },
+    {
+      "name": "spark-lite-a-Tab5-1A-budget",
+      "vcore_min_valid_input_V": 4.694864588982645,
+      "vcore_max_valid_input_V": 4.811906372562321,
+      "v33_min_valid_input_V": 3.2339954242072126,
+      "v33_max_valid_input_V": 3.2340037990521955,
+      "vout_max_V": 4.851126023683388,
+      "within_numeric_voltage_limits": true,
+      "diagnostics": {
+        "errors": [],
+        "warnings": []
+      },
+      "conditions": {
+        "path_R": 0.13674453593189015,
+        "hdmi_load": 0.05,
+        "ldo_trace_L": 6e-09,
+        "ldo_trace_R": 0.011,
+        "vin": 11.4,
+        "temp": 0,
+        "rsource": 0.5,
+        "rptc": 0.1,
+        "cout": 0.000176,
+        "L": 1.2e-05,
+        "esr": 0.04,
+        "cin_bulk": 8e-05,
+        "cin_ceramic": 8e-06,
+        "vref": 1.196,
+        "rtop_mult": 0.99,
+        "rbot_mult": 1.01,
+        "ldo_ref_mult": 0.98,
+        "tab_load": 1.0
+      }
+    },
+    {
+      "name": "spark-lite-a-Tab5-plus-Core1A",
+      "vcore_min_valid_input_V": 4.57631295408061,
+      "vcore_max_valid_input_V": 4.837204141833636,
+      "v33_min_valid_input_V": 3.2999940325854036,
+      "v33_max_valid_input_V": 3.3000038335675304,
+      "vout_max_V": 4.851934587981638,
+      "within_numeric_voltage_limits": true,
+      "diagnostics": {
+        "errors": [],
+        "warnings": []
+      },
+      "conditions": {
+        "path_R": 0.13674453593189015,
+        "hdmi_load": 0.05,
+        "ldo_trace_L": 6e-09,
+        "ldo_trace_R": 0.011,
+        "core_load": 1.0,
+        "cout": 0.000176,
+        "L": 1.8e-05,
+        "esr": 0.04,
+        "vref": 1.196,
+        "rtop_mult": 0.99,
+        "rbot_mult": 1.01,
+        "rsource": 0.5,
+        "tab_load": 1.0,
+        "vin": 11.4,
+        "rptc": 0.1
+      }
+    }
+  ],
+  "passed": 19,
+  "voltage_limits": {
+    "core_V": [
+      4.5,
+      5.5
+    ],
+    "local_3V3_V": [
+      3.135,
+      3.465
+    ]
+  },
+  "scope": "Analytical equivalent circuits, not automatic simulation of the complete manufacturing schematic. Fitted XC6206 dynamics in Lite A; full switching, thermal and PD-negotiation validation excluded."
+}
