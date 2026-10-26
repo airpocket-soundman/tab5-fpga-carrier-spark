@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-26",
-  "status": "Engineering review / Spark entry preparation. Not fabrication released.",
+  "status": "Main-power revision pending; published hardware and simulation are legacy review records. NOT FOR FABRICATION.",
   "variants": {
     "full": {
       "dimensions": [
@@ -14,271 +14,316 @@
           "refs": "J1",
           "value": "DC-005-5A-2.0",
           "quantity": 1,
-          "lcsc": "C381116"
+          "lcsc": "C381116",
+          "assemblyType": "tht"
         },
         {
           "refs": "F1",
           "value": "PTC 3A hold",
           "quantity": 1,
-          "lcsc": "C47002391"
+          "lcsc": "C47002391",
+          "assemblyType": "smt"
         },
         {
           "refs": "D1,D2,D4",
           "value": "SS54",
           "quantity": 3,
-          "lcsc": "C22452"
+          "lcsc": "C22452",
+          "assemblyType": "smt"
         },
         {
           "refs": "D3",
           "value": "SMBJ15A",
           "quantity": 1,
-          "lcsc": "C699013"
+          "lcsc": "C699013",
+          "assemblyType": "smt"
         },
         {
           "refs": "C1",
           "value": "100u/35V",
           "quantity": 1,
-          "lcsc": "C2983388"
+          "lcsc": "C2983388",
+          "assemblyType": "smt"
         },
         {
           "refs": "J2",
           "value": "USB-C PD in",
           "quantity": 1,
-          "lcsc": "C5246813"
+          "lcsc": "C5246813",
+          "assemblyType": "mandatory"
         },
         {
           "refs": "U1",
           "value": "CH224K",
           "quantity": 1,
-          "lcsc": "C970725"
+          "lcsc": "C970725",
+          "assemblyType": "smt"
         },
         {
           "refs": "R1,R36,R37,R52,R6",
           "value": "10k",
           "quantity": 5,
-          "lcsc": "C25804"
+          "lcsc": "C25804",
+          "assemblyType": "smt"
         },
         {
           "refs": "C2",
           "value": "1u/50V",
           "quantity": 1,
-          "lcsc": "C15849"
+          "lcsc": "C15849",
+          "assemblyType": "smt"
         },
         {
           "refs": "R2,R42,R43,R44,R45",
           "value": "1k",
           "quantity": 5,
-          "lcsc": "C21190"
+          "lcsc": "C21190",
+          "assemblyType": "smt"
         },
         {
           "refs": "R3,R5",
           "value": "0R",
           "quantity": 2,
-          "lcsc": "C21189"
+          "lcsc": "C21189",
+          "assemblyType": "smt"
         },
         {
           "refs": "U2",
           "value": "TPS5430DDAR",
           "quantity": 1,
-          "lcsc": "C9864"
+          "lcsc": "C9864",
+          "assemblyType": "smt"
         },
         {
           "refs": "C3",
           "value": "10n",
           "quantity": 1,
-          "lcsc": "C57112"
+          "lcsc": "C57112",
+          "assemblyType": "smt"
         },
         {
           "refs": "L1",
           "value": "15u/4A",
           "quantity": 1,
-          "lcsc": "C2041333"
+          "lcsc": "C2041333",
+          "assemblyType": "smt"
         },
         {
           "refs": "R7",
           "value": "3.24k",
           "quantity": 1,
-          "lcsc": "C22994"
+          "lcsc": "C22994",
+          "assemblyType": "smt"
         },
         {
           "refs": "R41,R47,R48,R8",
           "value": "100k",
           "quantity": 4,
-          "lcsc": "C25803"
+          "lcsc": "C25803",
+          "assemblyType": "smt"
         },
         {
           "refs": "R9",
           "value": "15k",
           "quantity": 1,
-          "lcsc": "C22809"
+          "lcsc": "C22809",
+          "assemblyType": "smt"
         },
         {
           "refs": "C4,C5",
           "value": "10u/50V",
           "quantity": 2,
-          "lcsc": "C13585"
+          "lcsc": "C13585",
+          "assemblyType": "smt"
         },
         {
           "refs": "C6",
           "value": "100n/50V",
           "quantity": 1,
-          "lcsc": "C14663"
+          "lcsc": "C14663",
+          "assemblyType": "smt"
         },
         {
           "refs": "C7",
           "value": "220u/10V POSCAP",
           "quantity": 1,
-          "lcsc": "C242173"
+          "lcsc": "C242173",
+          "assemblyType": "smt"
         },
         {
           "refs": "U3",
           "value": "TLV1117LV33DCYR",
           "quantity": 1,
-          "lcsc": "C15578"
+          "lcsc": "C15578",
+          "assemblyType": "smt"
         },
         {
           "refs": "C10",
           "value": "10u/16V",
           "quantity": 1,
-          "lcsc": "C13585"
+          "lcsc": "C13585",
+          "assemblyType": "smt"
         },
         {
           "refs": "C11",
           "value": "22u/10V",
           "quantity": 1,
-          "lcsc": "C12891"
+          "lcsc": "C12891",
+          "assemblyType": "smt"
         },
         {
           "refs": "J3",
           "value": "2.54-2*15P",
           "quantity": 1,
-          "lcsc": "C56496"
+          "lcsc": "C56496",
+          "assemblyType": "tht"
         },
         {
           "refs": "R10,R11,R12,R13,R14,R15,R16,R19,R20,R21,R22,R23,R24,R26,R27",
           "value": "680R",
           "quantity": 15,
-          "lcsc": "C23228"
+          "lcsc": "C23228",
+          "assemblyType": "smt"
         },
         {
           "refs": "J4",
           "value": "SOCKET XDAP-4042044-20401",
           "quantity": 1,
-          "lcsc": "C22471982"
+          "lcsc": "C22471982",
+          "assemblyType": "mandatory"
         },
         {
           "refs": "J5",
           "value": "HDMI OUT",
           "quantity": 1,
-          "lcsc": "C916313"
+          "lcsc": "C916313",
+          "assemblyType": "mandatory"
         },
         {
           "refs": "C12,C13,C14,C15,C16,C17,C18,C19",
           "value": "100n",
           "quantity": 8,
-          "lcsc": "C1525"
+          "lcsc": "C1525",
+          "assemblyType": "smt"
         },
         {
           "refs": "R28,R29,R32,R33,R34,R35",
           "value": "499R",
           "quantity": 6,
-          "lcsc": "C23065"
+          "lcsc": "C23065",
+          "assemblyType": "smt"
         },
         {
           "refs": "R30,R31",
           "value": "499R",
           "quantity": 2,
-          "lcsc": "C4125"
+          "lcsc": "C4125",
+          "assemblyType": "smt"
         },
         {
           "refs": "U4,U5,U6",
           "value": "RCLAMP0524P",
           "quantity": 3,
-          "lcsc": "C293965"
+          "lcsc": "C293965",
+          "assemblyType": "smt"
         },
         {
           "refs": "F2",
           "value": "PTC 500mA",
           "quantity": 1,
-          "lcsc": "C315893"
+          "lcsc": "C315893",
+          "assemblyType": "smt"
         },
         {
           "refs": "Q1,Q2,Q3,Q4",
           "value": "2N7002",
           "quantity": 4,
-          "lcsc": "C8545"
+          "lcsc": "C8545",
+          "assemblyType": "smt"
         },
         {
           "refs": "R38,R39",
           "value": "2.2k",
           "quantity": 2,
-          "lcsc": "C4190"
+          "lcsc": "C4190",
+          "assemblyType": "smt"
         },
         {
           "refs": "R40,R51",
           "value": "47k",
           "quantity": 2,
-          "lcsc": "C25819"
+          "lcsc": "C25819",
+          "assemblyType": "smt"
         },
         {
           "refs": "D5,D6,D7,D8",
           "value": "LED",
           "quantity": 4,
-          "lcsc": "C2286"
+          "lcsc": "C2286",
+          "assemblyType": "smt"
         },
         {
           "refs": "SW1,SW2",
           "value": "TS-1102S-B-D-B",
           "quantity": 2,
-          "lcsc": "C480272"
+          "lcsc": "C480272",
+          "assemblyType": "smt"
         },
         {
           "refs": "SW3",
           "value": "DS-02BLP",
           "quantity": 1,
-          "lcsc": "C692500"
+          "lcsc": "C692500",
+          "assemblyType": "obsolete"
         },
         {
           "refs": "U7,U8",
           "value": "SN74CB3Q3245PWR",
           "quantity": 2,
-          "lcsc": "C470961"
+          "lcsc": "C470961",
+          "assemblyType": "smt"
         },
         {
           "refs": "C20,C21,C22,C23,C24",
           "value": "100n",
           "quantity": 5,
-          "lcsc": "C14663"
+          "lcsc": "C14663",
+          "assemblyType": "smt"
         },
         {
           "refs": "U9",
           "value": "TPS3839G33DBZR",
           "quantity": 1,
-          "lcsc": "C485802"
+          "lcsc": "C485802",
+          "assemblyType": "smt"
         },
         {
           "refs": "U10",
           "value": "TPS3839K50DBZR",
           "quantity": 1,
-          "lcsc": "C702204"
+          "lcsc": "C702204",
+          "assemblyType": "smt"
         },
         {
           "refs": "JP1",
           "value": "B-2100S02P-A110",
           "quantity": 1,
-          "lcsc": "C124375"
+          "lcsc": "C124375",
+          "assemblyType": "tht"
         },
         {
           "refs": "R46",
           "value": "22k",
           "quantity": 1,
-          "lcsc": "C31850"
+          "lcsc": "C31850",
+          "assemblyType": "smt"
         },
         {
           "refs": "Q5",
           "value": "MMBT3904",
           "quantity": 1,
-          "lcsc": "C20526"
+          "lcsc": "C20526",
+          "assemblyType": "smt"
         }
       ],
       "power": {
@@ -329,271 +374,316 @@
           "refs": "J1",
           "value": "DC-005-5A-2.0",
           "quantity": 1,
-          "lcsc": "C381116"
+          "lcsc": "C381116",
+          "assemblyType": "tht"
         },
         {
           "refs": "F1",
           "value": "PTC 3A hold",
           "quantity": 1,
-          "lcsc": "C47002391"
+          "lcsc": "C47002391",
+          "assemblyType": "smt"
         },
         {
           "refs": "D1,D2,D4",
           "value": "SS54",
           "quantity": 3,
-          "lcsc": "C22452"
+          "lcsc": "C22452",
+          "assemblyType": "smt"
         },
         {
           "refs": "D3",
           "value": "SMBJ15A",
           "quantity": 1,
-          "lcsc": "C699013"
+          "lcsc": "C699013",
+          "assemblyType": "smt"
         },
         {
           "refs": "C1",
           "value": "100u/35V",
           "quantity": 1,
-          "lcsc": "C2983388"
+          "lcsc": "C2983388",
+          "assemblyType": "smt"
         },
         {
           "refs": "J2",
           "value": "USB-C PD in",
           "quantity": 1,
-          "lcsc": "C5246813"
+          "lcsc": "C5246813",
+          "assemblyType": "mandatory"
         },
         {
           "refs": "U1",
           "value": "CH224K",
           "quantity": 1,
-          "lcsc": "C970725"
+          "lcsc": "C970725",
+          "assemblyType": "smt"
         },
         {
           "refs": "R1,R36,R37,R52,R6",
           "value": "10k",
           "quantity": 5,
-          "lcsc": "C25804"
+          "lcsc": "C25804",
+          "assemblyType": "smt"
         },
         {
           "refs": "C2",
           "value": "1u/50V",
           "quantity": 1,
-          "lcsc": "C15849"
+          "lcsc": "C15849",
+          "assemblyType": "smt"
         },
         {
           "refs": "R2,R42,R43,R44,R45",
           "value": "1k",
           "quantity": 5,
-          "lcsc": "C21190"
+          "lcsc": "C21190",
+          "assemblyType": "smt"
         },
         {
           "refs": "R3,R5",
           "value": "0R",
           "quantity": 2,
-          "lcsc": "C21189"
+          "lcsc": "C21189",
+          "assemblyType": "smt"
         },
         {
           "refs": "U2",
           "value": "TPS5430DDAR",
           "quantity": 1,
-          "lcsc": "C9864"
+          "lcsc": "C9864",
+          "assemblyType": "smt"
         },
         {
           "refs": "C3",
           "value": "10n",
           "quantity": 1,
-          "lcsc": "C57112"
+          "lcsc": "C57112",
+          "assemblyType": "smt"
         },
         {
           "refs": "L1",
           "value": "15u MS1040-150M",
           "quantity": 1,
-          "lcsc": "C380054"
+          "lcsc": "C380054",
+          "assemblyType": "smt"
         },
         {
           "refs": "R7",
           "value": "3.3k",
           "quantity": 1,
-          "lcsc": "C22978"
+          "lcsc": "C22978",
+          "assemblyType": "smt"
         },
         {
           "refs": "R41,R47,R48,R49,R50,R8",
           "value": "100k",
           "quantity": 6,
-          "lcsc": "C25803"
+          "lcsc": "C25803",
+          "assemblyType": "smt"
         },
         {
           "refs": "R9",
           "value": "15k",
           "quantity": 1,
-          "lcsc": "C22809"
+          "lcsc": "C22809",
+          "assemblyType": "smt"
         },
         {
           "refs": "C4,C5",
           "value": "10u/50V",
           "quantity": 2,
-          "lcsc": "C13585"
+          "lcsc": "C13585",
+          "assemblyType": "smt"
         },
         {
           "refs": "C6",
           "value": "100n/50V",
           "quantity": 1,
-          "lcsc": "C14663"
+          "lcsc": "C14663",
+          "assemblyType": "smt"
         },
         {
           "refs": "C7",
           "value": "220u/10V POSCAP",
           "quantity": 1,
-          "lcsc": "C242173"
+          "lcsc": "C242173",
+          "assemblyType": "smt"
         },
         {
           "refs": "U3",
           "value": "XC6206P332MR-G",
           "quantity": 1,
-          "lcsc": "C5446"
+          "lcsc": "C5446",
+          "assemblyType": "smt"
         },
         {
           "refs": "C10",
           "value": "10u/16V",
           "quantity": 1,
-          "lcsc": "C13585"
+          "lcsc": "C13585",
+          "assemblyType": "smt"
         },
         {
           "refs": "C11",
           "value": "22u/10V",
           "quantity": 1,
-          "lcsc": "C12891"
+          "lcsc": "C12891",
+          "assemblyType": "smt"
         },
         {
           "refs": "J3",
           "value": "2.54-2*15P",
           "quantity": 1,
-          "lcsc": "C56496"
+          "lcsc": "C56496",
+          "assemblyType": "tht"
         },
         {
           "refs": "R10,R11,R12,R13,R14,R15,R16,R19,R20,R21,R22,R23,R24,R26,R27",
           "value": "680R",
           "quantity": 15,
-          "lcsc": "C23228"
+          "lcsc": "C23228",
+          "assemblyType": "smt"
         },
         {
           "refs": "J4",
           "value": "SOCKET XDAP-4042044-20401",
           "quantity": 1,
-          "lcsc": "C22471982"
+          "lcsc": "C22471982",
+          "assemblyType": "mandatory"
         },
         {
           "refs": "J5",
           "value": "HDMI OUT",
           "quantity": 1,
-          "lcsc": "C916313"
+          "lcsc": "C916313",
+          "assemblyType": "mandatory"
         },
         {
           "refs": "C12,C13,C14,C15,C16,C17,C18,C19",
           "value": "100n",
           "quantity": 8,
-          "lcsc": "C1525"
+          "lcsc": "C1525",
+          "assemblyType": "smt"
         },
         {
           "refs": "R28,R29,R32,R33,R34,R35",
           "value": "510R",
           "quantity": 6,
-          "lcsc": "C23193"
+          "lcsc": "C23193",
+          "assemblyType": "smt"
         },
         {
           "refs": "R30,R31",
           "value": "510R",
           "quantity": 2,
-          "lcsc": "C25123"
+          "lcsc": "C25123",
+          "assemblyType": "smt"
         },
         {
           "refs": "U4,U5,U6",
           "value": "RCLAMP0524P",
           "quantity": 3,
-          "lcsc": "C293965"
+          "lcsc": "C293965",
+          "assemblyType": "smt"
         },
         {
           "refs": "F2",
           "value": "PTC 500mA",
           "quantity": 1,
-          "lcsc": "C315893"
+          "lcsc": "C315893",
+          "assemblyType": "smt"
         },
         {
           "refs": "Q1,Q2,Q3,Q4",
           "value": "2N7002",
           "quantity": 4,
-          "lcsc": "C8545"
+          "lcsc": "C8545",
+          "assemblyType": "smt"
         },
         {
           "refs": "R38,R39",
           "value": "2.2k",
           "quantity": 2,
-          "lcsc": "C4190"
+          "lcsc": "C4190",
+          "assemblyType": "smt"
         },
         {
           "refs": "R40,R51",
           "value": "47k",
           "quantity": 2,
-          "lcsc": "C25819"
+          "lcsc": "C25819",
+          "assemblyType": "smt"
         },
         {
           "refs": "D5,D6,D7,D8",
           "value": "LED",
           "quantity": 4,
-          "lcsc": "C2286"
+          "lcsc": "C2286",
+          "assemblyType": "smt"
         },
         {
           "refs": "SW1,SW2",
           "value": "TS-1187A-B-A-B",
           "quantity": 2,
-          "lcsc": "C318884"
+          "lcsc": "C318884",
+          "assemblyType": "smt"
         },
         {
           "refs": "SW3",
           "value": "DS-02BLP",
           "quantity": 1,
-          "lcsc": "C692500"
+          "lcsc": "C692500",
+          "assemblyType": "obsolete"
         },
         {
           "refs": "U7,U8",
           "value": "SN74CB3Q3245PWR",
           "quantity": 2,
-          "lcsc": "C470961"
+          "lcsc": "C470961",
+          "assemblyType": "smt"
         },
         {
           "refs": "C20,C21,C22,C23,C24",
           "value": "100n",
           "quantity": 5,
-          "lcsc": "C14663"
+          "lcsc": "C14663",
+          "assemblyType": "smt"
         },
         {
           "refs": "U9",
           "value": "TPS3839G33DBZR",
           "quantity": 1,
-          "lcsc": "C485802"
+          "lcsc": "C485802",
+          "assemblyType": "smt"
         },
         {
           "refs": "U10",
           "value": "TPS3839K50DBZR",
           "quantity": 1,
-          "lcsc": "C702204"
+          "lcsc": "C702204",
+          "assemblyType": "smt"
         },
         {
           "refs": "JP1",
           "value": "B-2100S02P-A110",
           "quantity": 1,
-          "lcsc": "C124375"
+          "lcsc": "C124375",
+          "assemblyType": "tht"
         },
         {
           "refs": "R46",
           "value": "22k",
           "quantity": 1,
-          "lcsc": "C31850"
+          "lcsc": "C31850",
+          "assemblyType": "smt"
         },
         {
           "refs": "Q5",
           "value": "MMBT3904",
           "quantity": 1,
-          "lcsc": "C20526"
+          "lcsc": "C20526",
+          "assemblyType": "smt"
         }
       ],
       "power": {
@@ -633,5 +723,12 @@
       }
     }
   },
-  "artifactCommit": "3eed784b2eb11b2db41bf5ae61d70b4696a5320d"
+  "artifactCommit": "714b06bf51303d245a2a695db8103d2ef30105e5",
+  "hardwareRevision": {
+    "published": "legacy-fpga-stop",
+    "requested": "alternate-external-main-power",
+    "fabricationReleased": false,
+    "nativeUpdated": false,
+    "newPowerSimulationExecuted": false
+  }
 }

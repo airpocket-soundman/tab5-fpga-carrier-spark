@@ -4,3 +4,5 @@
 
 /* Technical-document heading scale. */
 .hero h1{font-size:clamp(26px,2.7vw,38px);line-height:1.5;letter-spacing:-.6px}.section h2{font-size:clamp(22px,2vw,29px)}
+
+.revision-notice{margin:1.5rem auto;padding:1.25rem 1.5rem;max-width:1160px;border:2px solid #9b4932;border-radius:12px;background:#fff3eb;color:#512b22}.revision-notice h2{font-size:1.25rem;margin:0 0 .5rem}.revision-notice p{line-height:1.8}.revision-notice a{color:inherit;text-decoration:underline}.bom-table td:last-child{min-width:220px;max-width:340px;white-space:normal}@media(max-width:768px){.revision-notice{margin:1rem; padding:1rem}}
