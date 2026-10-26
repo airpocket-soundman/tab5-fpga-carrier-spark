@@ -1,7 +1,6 @@
 {
   "date": "2026-10-26",
   "published_revision": "r4 single-sided SMT, SW3 omitted",
-  "fabrication_released": false,
   "smt_side": "top only",
   "main_power_switch": "omitted by user-authorized fallback",
   "fpga_only_shutdown_switch": "removed",
@@ -25,5 +24,29 @@
   },
   "supplier_assembly_acceptance": "pending",
   "hardware_validation": "pending",
-  "spark_entry_submitted": false
+  "spark_entry_submitted": false,
+  "poc_order_files_complete": true,
+  "production_qualification": false,
+  "schematic_review": {
+    "fatal_errors": 0,
+    "errors": 0,
+    "warnings": 13,
+    "reviewed_warnings": 13,
+    "unclassified_warnings": 0,
+    "categories": {
+      "reserved_nets": 3,
+      "identical_label_duplicates": 2,
+      "custom_library_supplier_groups": 4,
+      "unused_J4_pin_groups": 4,
+      "unused_J4_pins": 94
+    }
+  },
+  "manufacturing_profile": {
+    "stackup": "JLC04161H-7628",
+    "board_thickness_mm": 1.6,
+    "outer_copper_um": 35,
+    "inner_copper_um": 15.2,
+    "dielectric_constant": 4.4
+  },
+  "placement_frame": "corrected to official JLCPCB footprint frame"
 }

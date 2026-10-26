@@ -41,3 +41,9 @@ HDMI uses coupled RLGC sections, an assumed Thevenin driver and ideal50Ω-per-le
 These records do not establish switching or thermal qualification, PD negotiation, physical PARLIO/DMA, DDR3 initialization, GPU throughput or manufactured-hardware operation.
 
 Execution records retain the UUID of the project in which calculations actually ran. Final native projects include a mask/paste-only correction of U2 thermal copper, with exact pad and drill geometry retained. Solver inputs and electrical routing are unchanged. Actual native paste and drill output was inspected separately.
+
+## Manufacturing record
+
+PoC order data is complete for the JLC04161H-7628 four-layer profile,1.6mm board,35µm outer copper,15.2µm inner copper andεr4.4. Placement coordinates are corrected to the official JLCPCB footprint frame. The normal supplier placement/stock/DFM review and manufactured-hardware validation are separate from completing these data.
+
+Native schematic warnings have all been reviewed: fatal/errors0, reviewed warnings13, unclassified0. Three reserved nets, two repeated identical net labels, four custom supplier-attribute groups and four groups for94 unused J4 pins account for the13 warnings. This document’s numerical model limits remain unchanged.

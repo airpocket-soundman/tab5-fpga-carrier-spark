@@ -1,6 +1,6 @@
 # Tab5 FPGA Carrier — Spark
 
-**r4：SMT仅在正面。省略主电源开关和旧FPGA停止SW3。J3从LCSC单独购买并手焊。本资料为报价评审候选，厂商装配批准及实机验证尚未完成。**
+**r4：SMT仅在正面。省略主电源开关和旧FPGA停止SW3。J3从LCSC单独购买并手焊。PoC下单文件已完成。厂商常规装配预览、库存与DFM受理，以及制造后实机验证分别进行。**
 
 [日本語](README.ja.md) · **中文** · [English](README.md)
 
@@ -20,9 +20,9 @@
 | 电源数值范围内 |6/6，不含局部LDO动态响应 |18/20，含两项超限敏感性试验 |
 | HDMI工程判据 |35/35 |35/35 |
 | PCB DRC |0违规 |0违规 |
-| 原理图 |0致命错误，13项警告未分类 |相同 |
+| 原理图 |0致命错误、0错误，13项警告已全部分类、未分类0 |相同 |
 
-完成求解与满足电路条件是不同指标。库存、装配受理、旋转、实物插合及实机运行仍待确认。尚未发布制造批准，也未提交报名、材料申请、制造订单或付款。
+完成求解与满足电路条件是不同指标。库存、装配受理、旋转、实物插合及实机运行仍待确认。PoC下单文件已经完成。尚未报名、申请材料、提交制造订单或付款。
 
 ## 文件
 
@@ -31,7 +31,7 @@
 - [完整版仿真](simulation/full) · [A型仿真](simulation/lite-a) · [方法与限制](simulation/README.md)
 - [装配要求](hardware/ASSEMBLY.md) · [r4修订](hardware/MAIN_POWER_REVISION.md) · [文件哈希](manifest.json)
 
-`.epro2`包含原理图、PCB及库。PCBA报价时配套使用`jlc-bom.csv`与`jlc-cpl.csv`，两者均不含J3。总体`bom.csv`区分并列出手焊J3。
+`.epro2`包含原理图、PCB及库。CPL已修正为JLCPCB官方封装坐标系，应使用随附CPL，不要从原始库旋转值重新生成。PCBA报价时配套使用`jlc-bom.csv`与`jlc-cpl.csv`，两者均不含J3。总体`bom.csv`区分并列出手焊J3。
 
 ## 采购与运行条件
 
@@ -52,3 +52,14 @@ HDMI采用耦合RLGC线、假设Thevenin驱动源及理想接收端，不含线�
 本仓库准备申请[国际EasyEDA Spark](https://oshwlab.com/activities/easyeda-spark-2026?tab=2#P1)。设计流程资格、完整产品要求及支持批准仍需主办方确认。注册不会自动发放开发资金，材料支持须经设计和报价审核及优惠券批准。LCSC单独采购支持尚未确认。尚未报名、申请材料、下单或付款。
 
 Copyright2026 airpocket-soundman。[MIT](LICENSE)及[第三方许可声明](THIRD_PARTY_NOTICES.md)。
+
+## 制造条件及警告复核
+
+PoC制造条件为**JLC04161H-7628、四层、板厚1.6mm、外层铜35µm、内层15.2µm、εr=4.4**。完整设置见各款order-profile JSON。保持仅正面SMT，J3由LCSC单独采购并手焊。
+
+原理图13项警告已全部分类：预留PD_PG/TAB_SCL/TAB_SDA网络3项，同名VBUS_PD/GND重复2项，定制库销售属性4组，J4的94个有意不使用引脚4组。致命错误0、错误0、未分类0。未放宽DRC规则或抑制警告，按电路及引脚核对结果接受用于PoC，并保留复核记录。
+
+## PoC下单文件
+
+- [完整版 ZIP](hardware/full/full-r4-poc-order.zip)
+- [A型经济版 ZIP](hardware/lite-a/lite-a-r4-poc-order.zip)

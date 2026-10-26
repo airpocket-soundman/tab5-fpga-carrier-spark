@@ -8285,91 +8285,91 @@
   {
     "ok": true,
     "status": 0,
-    "runtimeMs": 1208.4000000059605,
+    "runtimeMs": 1172.300000011921,
     "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) EasyEDAPro/3.2.149.88089769 Chrome/146.0.7680.188 Electron/41.2.1-jlc-sa-win-x64.2 Safari/537.36",
     "engine": "Official EasyEDA NGspice46 WASM; executed in EasyEDA API Gateway Worker",
     "caseName": "spark-11p4V",
     "exportSampling": "adaptive solver output",
-    "executionProjectUuid": "6c49524a820f8c0daaacd830c93718e05caa43ca83c241fd37c5bef618aaaa27",
+    "executionProjectUuid": "cd2e33d9ad2aaff07808921a54e53f67d559e04846e76e49926f46f87768092a",
     "source": {
       "easyeda_project_sha256": "8091f1cf601e0be6aca259650e2fc1898012ebb4b6f684bd78a66cc73ebdbde0",
-      "original_deck_sha256": "1121642bd118cf928ba931b53bd71fd3b296748120774e0f35d82fa8afed4a5d",
-      "inlined_deck_sha256": "4c28ed31ad16baec795cb2a16bf3d2c71f301043bb43978a4963d445174a99fb"
+      "original_deck_sha256": "f224d5c18f8c5ac307e2a6b3b9bd5ac739508a38d82eaae3132e59cb25d201d3",
+      "inlined_deck_sha256": "5cb1d69c830c46762e24e64aa3af727a4a5a698d3eb9c46234ec60314fb860df"
     }
   },
   {
     "ok": true,
     "status": 0,
-    "runtimeMs": 1184.300000011921,
+    "runtimeMs": 1046.5999999940395,
     "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) EasyEDAPro/3.2.149.88089769 Chrome/146.0.7680.188 Electron/41.2.1-jlc-sa-win-x64.2 Safari/537.36",
     "engine": "Official EasyEDA NGspice46 WASM; executed in EasyEDA API Gateway Worker",
     "caseName": "spark-12p6V",
     "exportSampling": "adaptive solver output",
-    "executionProjectUuid": "6c49524a820f8c0daaacd830c93718e05caa43ca83c241fd37c5bef618aaaa27",
+    "executionProjectUuid": "cd2e33d9ad2aaff07808921a54e53f67d559e04846e76e49926f46f87768092a",
     "source": {
       "easyeda_project_sha256": "8091f1cf601e0be6aca259650e2fc1898012ebb4b6f684bd78a66cc73ebdbde0",
-      "original_deck_sha256": "d7b188c0bbe608b473608cfee753a3f659040c5dd19005c901cf26d9f203eb8c",
-      "inlined_deck_sha256": "cabbfd6d296ebb1514c5021c7567c2a8895ce0c338684187672016be115dd8d7"
+      "original_deck_sha256": "a78cd0ba0fefffb3fc0628a251eb8ad1cc09f1b89285a1db694e38eaf9b1093d",
+      "inlined_deck_sha256": "a395360d68b3e609922ff5808822f3c30c4c72e7fd6705c07aeb2d5f44e87ea6"
     }
   },
   {
     "ok": true,
     "status": 0,
-    "runtimeMs": 1116.0999999940395,
+    "runtimeMs": 1154.5999999940395,
     "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) EasyEDAPro/3.2.149.88089769 Chrome/146.0.7680.188 Electron/41.2.1-jlc-sa-win-x64.2 Safari/537.36",
     "engine": "Official EasyEDA NGspice46 WASM; executed in EasyEDA API Gateway Worker",
     "caseName": "spark-12V-nominal",
     "exportSampling": "adaptive solver output",
-    "executionProjectUuid": "6c49524a820f8c0daaacd830c93718e05caa43ca83c241fd37c5bef618aaaa27",
+    "executionProjectUuid": "cd2e33d9ad2aaff07808921a54e53f67d559e04846e76e49926f46f87768092a",
     "source": {
       "easyeda_project_sha256": "8091f1cf601e0be6aca259650e2fc1898012ebb4b6f684bd78a66cc73ebdbde0",
-      "original_deck_sha256": "fde77fee04edac037020fef931a389695d6ba8330af90307b33072eb3de1a125",
-      "inlined_deck_sha256": "4f20240a1863d3212a47ddad1450d0f54e5f0a7effa5136915233f3ebad196ce"
+      "original_deck_sha256": "b122dad954e78566df5c181523987e6699e06ea3bfe01c8bd409915af4cb1bd9",
+      "inlined_deck_sha256": "6883630eb662e22e9162fb41856c90b9b3fa44bff9cf3e94096c5eb7b44da5ee"
     }
   },
   {
     "ok": true,
     "status": 0,
-    "runtimeMs": 1090.800000011921,
+    "runtimeMs": 1546,
     "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) EasyEDAPro/3.2.149.88089769 Chrome/146.0.7680.188 Electron/41.2.1-jlc-sa-win-x64.2 Safari/537.36",
     "engine": "Official EasyEDA NGspice46 WASM; executed in EasyEDA API Gateway Worker",
     "caseName": "spark-load1A-sensitivity",
     "exportSampling": "adaptive solver output",
-    "executionProjectUuid": "6c49524a820f8c0daaacd830c93718e05caa43ca83c241fd37c5bef618aaaa27",
+    "executionProjectUuid": "cd2e33d9ad2aaff07808921a54e53f67d559e04846e76e49926f46f87768092a",
     "source": {
       "easyeda_project_sha256": "8091f1cf601e0be6aca259650e2fc1898012ebb4b6f684bd78a66cc73ebdbde0",
-      "original_deck_sha256": "e304e3d0f0c9b35d2760c5e4d3eb3d291e8b855a7d1d62b4abb04fec00f4aa69",
-      "inlined_deck_sha256": "98a5dcf40901a7b79d5565e13a724893f7067e1022d7bce5254e293557fd5c3a"
+      "original_deck_sha256": "543cb11e8a4f0550d177d6e2dbdaa1d88df354e7f863f5f674ef2ed14f700489",
+      "inlined_deck_sha256": "52e6ed46c945ecd1285c9fcea1ecf566a70ab52edfdcd4bf2c67968c4fa0e0db"
     }
   },
   {
     "ok": true,
     "status": 0,
-    "runtimeMs": 1025,
+    "runtimeMs": 1243,
     "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) EasyEDAPro/3.2.149.88089769 Chrome/146.0.7680.188 Electron/41.2.1-jlc-sa-win-x64.2 Safari/537.36",
     "engine": "Official EasyEDA NGspice46 WASM; executed in EasyEDA API Gateway Worker",
     "caseName": "spark-lowESR-sensitivity",
     "exportSampling": "adaptive solver output",
-    "executionProjectUuid": "6c49524a820f8c0daaacd830c93718e05caa43ca83c241fd37c5bef618aaaa27",
+    "executionProjectUuid": "cd2e33d9ad2aaff07808921a54e53f67d559e04846e76e49926f46f87768092a",
     "source": {
       "easyeda_project_sha256": "8091f1cf601e0be6aca259650e2fc1898012ebb4b6f684bd78a66cc73ebdbde0",
-      "original_deck_sha256": "979850dcac671a3d6cf349e73819a79374f5da7b753dffa92af21808fe535ab4",
-      "inlined_deck_sha256": "e46e094825bec8fdab1404978c9c906c6406cb11e0bbb95fc89eaec4cbefdabe"
+      "original_deck_sha256": "ec8c5e17720688ec4b0785e6bce79103722227c186cb7a98800f6c6b4ef369ce",
+      "inlined_deck_sha256": "b87084b9d1a392aac69a6facfa2a4b5b1f6578cd524ae6ed34e2da20bb6196b6"
     }
   },
   {
     "ok": true,
     "status": 0,
-    "runtimeMs": 1038.5999999940395,
+    "runtimeMs": 1203.5,
     "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) EasyEDAPro/3.2.149.88089769 Chrome/146.0.7680.188 Electron/41.2.1-jlc-sa-win-x64.2 Safari/537.36",
     "engine": "Official EasyEDA NGspice46 WASM; executed in EasyEDA API Gateway Worker",
     "caseName": "spark-PD-profile",
     "exportSampling": "adaptive solver output",
-    "executionProjectUuid": "6c49524a820f8c0daaacd830c93718e05caa43ca83c241fd37c5bef618aaaa27",
+    "executionProjectUuid": "cd2e33d9ad2aaff07808921a54e53f67d559e04846e76e49926f46f87768092a",
     "source": {
       "easyeda_project_sha256": "8091f1cf601e0be6aca259650e2fc1898012ebb4b6f684bd78a66cc73ebdbde0",
-      "original_deck_sha256": "d132b1d656fbdd89041aaa86cb900a59e4e6d45ac4b02e05a3ffcc2796df8502",
-      "inlined_deck_sha256": "6f6e45094aabcd613550726a89c63fd4ff4f8ee3ad0c9c1cbf659686b7b8a3ac"
+      "original_deck_sha256": "dba8cb225f498643917eb5b67f43419833caef4eff32548a933b318858c528b0",
+      "inlined_deck_sha256": "e26c8aa02ace5077d132b360a5b7b03074977700e06ec9edac661a45c97498d9"
     }
   }
 ]

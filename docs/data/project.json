@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-26",
-  "status": "r4 single-sided SMT, SW3 omitted, J3 manually soldered. Quotation candidate; supplier acceptance and hardware validation pending.",
+  "status": "r4 PoC manufacturing data checked. Top-side SMT, SW3 omitted, J3 manually soldered. Supplier acceptance and hardware validation remain order/build steps.",
   "variants": {
     "full": {
       "dimensions": [
@@ -338,6 +338,7 @@
         "oneMHzPass": 4
       },
       "files": {
+        "order": "hardware/full/full-r4-poc-order.zip",
         "native": "hardware/full/spark-lcsc-priority-review.epro2",
         "gerbers": "hardware/full/gerbers.zip",
         "bom": "hardware/full/bom.csv",
@@ -358,12 +359,19 @@
           125,
           78
         ],
-        "pcba_status": "quotation candidate; supplier acceptance pending",
+        "pcba_status": "PoC manufacturing data checked; supplier acceptance remains ordering step",
         "pcb_drc_violations": 0,
         "schematic_fatal_errors": 0,
         "schematic_warnings": 13,
         "connected_schematic_pins_verified": 480,
-        "checks_scope": "Native project connectivity, component values, copper pad positions, track/via net and geometry cross-checks. Physical fit, full DFM and warning classification pending."
+        "checks_scope": "Native project connectivity, component values, copper pad positions, track/via net and geometry cross-checks. All 13 native schematic warnings individually reviewed; see schematic-warning-review.json. Supplier DFM and physical hardware validation remain order/build steps.",
+        "schematic_unclassified_warnings": 0,
+        "gerber_cpl_origin_mm": [
+          2,
+          79
+        ],
+        "cpl_frame": "Official supplier footprint frame; numbered-pad orientation corrected; see assembly-placement-corrections.json",
+        "manufacturing_stackup": "JLC04161H-7628"
       }
     },
     "lite-a": {
@@ -702,6 +710,7 @@
         "oneMHzPass": 4
       },
       "files": {
+        "order": "hardware/lite-a/lite-a-r4-poc-order.zip",
         "native": "hardware/lite-a/spark-lite-a-lcsc-review.epro2",
         "gerbers": "hardware/lite-a/gerbers.zip",
         "bom": "hardware/lite-a/bom.csv",
@@ -722,14 +731,20 @@
           99,
           78
         ],
-        "pcba_status": "quotation candidate; supplier acceptance pending",
+        "pcba_status": "PoC manufacturing data checked; supplier acceptance remains ordering step",
         "pcb_drc_violations": 0,
         "schematic_fatal_errors": 0,
         "schematic_warnings": 13,
         "connected_schematic_pins_verified": 484,
-        "checks_scope": "Native project connectivity, component values, copper pad positions, track/via net and geometry cross-checks. Physical fit, full DFM and warning classification pending."
+        "checks_scope": "Native project connectivity, component values, copper pad positions, track/via net and geometry cross-checks. All 13 native schematic warnings individually reviewed; see schematic-warning-review.json. Supplier DFM and physical hardware validation remain order/build steps.",
+        "schematic_unclassified_warnings": 0,
+        "gerber_cpl_origin_mm": [
+          28,
+          79
+        ],
+        "cpl_frame": "Official supplier footprint frame; numbered-pad orientation corrected; see assembly-placement-corrections.json",
+        "manufacturing_stackup": "JLC04161H-7628"
       }
     }
-  },
-  "artifactCommit": "5aff4e889d5a21088cadc3bad45889ef4f01a526"
+  }
 }

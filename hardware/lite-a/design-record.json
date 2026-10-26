@@ -13,15 +13,17 @@
     99,
     78
   ],
-  "pcba_status": "quotation candidate; supplier acceptance pending",
+  "pcba_status": "PoC manufacturing data checked; supplier acceptance remains ordering step",
   "pcb_drc_violations": 0,
   "schematic_fatal_errors": 0,
   "schematic_warnings": 13,
   "connected_schematic_pins_verified": 484,
-  "checks_scope": "Native project connectivity, component values, copper pad positions, track/via net and geometry cross-checks. Physical fit, full DFM and warning classification pending.",
-  "manufacturing_files_are_a_matched_set": true,
-  "supplied_gerber_cpl_origin_mm": [
+  "checks_scope": "Native project connectivity, component values, copper pad positions, track/via net and geometry cross-checks. All 13 native schematic warnings individually reviewed; see schematic-warning-review.json. Supplier DFM and physical hardware validation remain order/build steps.",
+  "schematic_unclassified_warnings": 0,
+  "gerber_cpl_origin_mm": [
     28,
     79
-  ]
+  ],
+  "cpl_frame": "Official supplier footprint frame; numbered-pad orientation corrected; see assembly-placement-corrections.json",
+  "manufacturing_stackup": "JLC04161H-7628"
 }

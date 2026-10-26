@@ -10,7 +10,7 @@
 
 J3/C56496はLCSC別購入・手はんだ。PCBA用BOMとCPLの両方から除外し、裏向き嵌合方向は維持します。J1/JP1のTHT実装可否、部品在庫・回転・DFM・実物嵌合は業者と確認が必要です。
 
-掲載する解析はr4の等価回路をEasyEDA内で再計算した記録です。主電源スイッチが存在しないため、そのON/OFF・突入や遮断の検証結果として扱いません。製造レビュー候補であり、実機・製造承認・Spark支援の受理は未完了です。
+掲載する解析はr4の等価回路をEasyEDA内で再計算した記録です。主電源スイッチが存在しないため、そのON/OFF・突入や遮断の検証結果として扱いません。PoC発注用データは完成しています。業者の通常実装プレビュー・在庫・DFM受理と、製造後の実機検証は別途行います。Spark支援の受理は未完了です。
 
 ## 中文
 
@@ -20,7 +20,7 @@ J3/C56496はLCSC別購入・手はんだ。PCBA用BOMとCPLの両方から除外
 
 J3/C56496从LCSC单独购买并手焊，从PCBA BOM和CPL同时排除，保留朝向背面的插合方向。J1/JP1的THT受理、库存、旋转、DFM及实物插合须确认。
 
-发布记录是r4等效电路在嘉立创EDA内的重新计算。不存在主电源开关，因此不得将其作为开关ON/OFF、浪涌或切断的验证。本资料为制造评审候选，实机、制造批准及Spark支持受理尚未完成。
+发布记录是r4等效电路在嘉立创EDA内的重新计算。不存在主电源开关，因此不得将其作为开关ON/OFF、浪涌或切断的验证。PoC下单文件已完成。厂商常规装配预览、库存、DFM受理及制造后实机验证分别进行。Spark支持尚未获批准。
 
 ## English
 
@@ -30,4 +30,10 @@ Full125×78mm and Lite A99×78mm retain four layers, HDMI, USB PD12V, barrel12V,
 
 J3/C56496 is separately purchased from LCSC and hand soldered, excluded from both PCBA BOM and CPL while retaining its bottom-facing mating orientation. J1/JP1 THT acceptance, stock, rotations, DFM and physical mating require review.
 
-Published analytical records are r4 equivalent circuits recalculated inside EasyEDA. They do not validate main-switch operation, switched inrush or disconnection, because that switch is absent. Files remain quotation/review candidates; hardware, manufacturing approval and Spark support acceptance are pending.
+Published analytical records are r4 equivalent circuits recalculated inside EasyEDA. They do not validate main-switch operation, switched inrush or disconnection, because that switch is absent. PoC order files are complete. Normal supplier placement preview, stock and DFM acceptance, followed by post-manufacturing hardware validation, remain separate steps. Spark support acceptance is pending.
+
+## Manufacturing and warning review
+
+PoC profile: JLC04161H-7628, four layers,1.6mm, outer35µm/inner15.2µm,εr4.4. The supplied CPL is corrected to the official JLCPCB footprint frame.
+
+Schematic fatal/errors0, warnings13 reviewed, unclassified0: reserved nets3, identical labels2, custom-library supplier metadata4 groups, unused94 J4 pins4 groups. Warnings are documented and accepted for PoC without suppressing DRC checks.

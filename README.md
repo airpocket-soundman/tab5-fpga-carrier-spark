@@ -1,6 +1,6 @@
 # Tab5 FPGA Carrier — Spark
 
-**r4: top-side SMT only. Main-power and FPGA-only shutdown switch SW3 are omitted. J3 is separately purchased from LCSC and manually soldered. Quotation-review candidate; manufacturer approval and hardware validation are pending.**
+**r4: top-side SMT only. Main-power and FPGA-only shutdown switch SW3 are omitted. J3 is separately purchased from LCSC and manually soldered. PoC order files are complete; normal supplier placement/stock/DFM acceptance and post-manufacturing validation are separate steps.**
 
 [日本語](README.ja.md) · [中文](README.zh.md) · **English**
 
@@ -20,9 +20,9 @@ Four-layer carriers connecting M5Stack Tab5 and Tang Primer 20K Core for **FPGA 
 | Power cases within numerical limits |6/6; TLV1117 dynamics excluded |18/20; two severe sensitivities exceed limits |
 | HDMI engineering criteria |35/35 |35/35 |
 | Native PCB DRC |0 violations |0 violations |
-| Native schematic |0 fatal errors /13 unclassified warnings |Same |
+| Native schematic |0 fatal errors,0 errors /13 reviewed warnings,0 unclassified |Same |
 
-Numerical completion and circuit-limit approval are separate measures. Supplier acceptance, stock, rotations, physical fit and hardware operation remain to be verified. Publication does not constitute a fabrication release, entry submission or payment.
+Numerical completion and circuit-limit approval are separate measures. PoC data preparation is complete. Supplier acceptance, stock, physical fit and hardware operation still require the usual order review and post-manufacturing checks. No entry, order or payment has been submitted.
 
 ## Files
 
@@ -31,7 +31,7 @@ Numerical completion and circuit-limit approval are separate measures. Supplier 
 - [Full simulation records](simulation/full) · [Lite A simulation records](simulation/lite-a) · [method and limits](simulation/README.md)
 - [Assembly instructions](hardware/ASSEMBLY.md) · [r4 revision](hardware/MAIN_POWER_REVISION.md) · [file hashes](manifest.json)
 
-Each `.epro2` contains the schematic, PCB and libraries. Use the supplied `jlc-bom.csv` and `jlc-cpl.csv` together for the PCBA quotation. They exclude J3. The broader `bom.csv` also identifies the manually soldered J3.
+Each `.epro2` contains the schematic, PCB and libraries. The supplied CPL is corrected to the official JLCPCB footprint frame; use it for placement rather than regenerating raw library rotations. Use the supplied `jlc-bom.csv` and `jlc-cpl.csv` together for the PCBA quotation. They exclude J3. The broader `bom.csv` also identifies the manually soldered J3.
 
 ## Sourcing and operation
 
@@ -52,3 +52,14 @@ Calculations use the official NGspice46 WASM inside the EasyEDA API Gateway clie
 This repository prepares an application to the [international EasyEDA Spark program](https://oshwlab.com/activities/easyeda-spark-2026?tab=2#P1). Design-process eligibility, complete-product requirements and support approval require organizer confirmation. Registration does not automatically provide development funds. Material support is subject to an approved design/quotation application and coupons. Standalone LCSC support is not assumed. No entry, material application, manufacturing order or payment has been submitted.
 
 Copyright2026 airpocket-soundman. Original material is under [MIT](LICENSE); [third-party notices](THIRD_PARTY_NOTICES.md) apply separately.
+
+## Manufacturing profile and warning review
+
+The PoC profile is **JLC04161H-7628, four layers,1.6mm board,35µm outer copper,15.2µm inner copper,εr=4.4**. See the variant order-profile JSON for the complete settings. The top-side SMT and separate manually soldered J3 configuration is retained.
+
+All13 schematic warnings are classified: three reserved PD_PG/TAB_SCL/TAB_SDA nets, two repeated identical VBUS_PD/GND labels, four custom-library supplier-attribute groups, and four groups for94 intentionally unused J4 pins. There are zero fatal errors, zero errors and zero unclassified warnings. The reviewed warnings are accepted for PoC without suppressing warnings or changing DRC rules; detailed evidence is retained with the design records.
+
+## PoC order packages
+
+- [Full ZIP](hardware/full/full-r4-poc-order.zip)
+- [Lite A ZIP](hardware/lite-a/lite-a-r4-poc-order.zip)

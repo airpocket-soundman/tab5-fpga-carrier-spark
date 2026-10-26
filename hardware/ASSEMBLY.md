@@ -1,6 +1,6 @@
 # r4 assembly instructions / 実装指示 / 装配要求
 
-Both variants use **top-side SMT only**. Main-power and FPGA-only shutdown SW3 are omitted. These are quotation-review candidates; supplier DFM, rotations and actual fit require approval before manufacturing.
+Both variants use **top-side SMT only**. Main-power and FPGA-only shutdown SW3 are omitted. PoC order files are complete. The supplied CPL is corrected to the official JLCPCB footprint frame. The usual supplier placement preview, stock and DFM acceptance precede ordering; physical fit and operation are checked after manufacturing.
 
 | | Full | Lite A |
 | --- | --- | --- |
@@ -33,3 +33,13 @@ Check shorts, input polarity and regulator outputs with Tab5 and Core disconnect
 日本語：J3はLCSC別購入・手はんだで、PCBA BOM/CPLから除外。両版ともSMTは表面のみ、SW3は省略。裏向きTHTの手付けを両面SMTとして見積もらないこと。
 
 中文：J3从LCSC单独购买并手焊，不计入PCBA BOM/CPL。两款SMT均仅在正面，省略SW3。背向THT手焊不应按双面SMT报价。
+
+## Manufacturing profile
+
+Use **JLC04161H-7628, four layers,1.6mm board thickness,35µm outer copper,15.2µm inner copper,εr=4.4**. Use each variant’s `order-profile.json` and the supplied BOM/CPL together. Do not regenerate uncorrected placement rotations from the custom-library footprint frame.
+
+Native schematic review: zero fatal errors, zero errors;13 warnings reviewed, none unclassified. Categories are three reserved nets, two identical-net-label duplicates, four custom supplier-attribute groups and four groups covering94 unused J4 pins. Full review evidence is in the variant design records.
+
+日本語：PoC発注用データは完成済みです。業者の通常実装プレビュー・在庫・DFM受理、製造後の実物嵌合と電気検証は別途行います。
+
+中文：PoC下单文件已完成。厂商常规装配预览、库存、DFM受理及制造后的实物插合和电气验证分别进行。
