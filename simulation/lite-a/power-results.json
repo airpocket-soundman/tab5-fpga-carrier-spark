@@ -9,10 +9,6 @@
       "v33_max_valid_input_V": 3.300003833526504,
       "vout_max_V": 4.853318130215533,
       "within_numeric_voltage_limits": true,
-      "diagnostics": {
-        "errors": [],
-        "warnings": []
-      },
       "conditions": {
         "path_R": 0.13674453593189015,
         "hdmi_load": 0.05,
@@ -36,10 +32,6 @@
       "v33_max_valid_input_V": 3.3660040821451354,
       "vout_max_V": 5.2081582348319975,
       "within_numeric_voltage_limits": true,
-      "diagnostics": {
-        "errors": [],
-        "warnings": []
-      },
       "conditions": {
         "path_R": 0.17167592763569148,
         "hdmi_load": 0.05,
@@ -65,10 +57,6 @@
       "v33_max_valid_input_V": 3.364429693694623,
       "vout_max_V": 5.028367580702178,
       "within_numeric_voltage_limits": false,
-      "diagnostics": {
-        "errors": [],
-        "warnings": []
-      },
       "conditions": {
         "path_R": 0.13674453593189015,
         "hdmi_load": 0.05,
@@ -87,10 +75,6 @@
       "v33_max_valid_input_V": 3.297144589747331,
       "vout_max_V": 5.028342372780076,
       "within_numeric_voltage_limits": true,
-      "diagnostics": {
-        "errors": [],
-        "warnings": []
-      },
       "conditions": {
         "path_R": 0.13674453593189015,
         "hdmi_load": 0.05,
@@ -110,10 +94,6 @@
       "v33_max_valid_input_V": 3.4310120628065444,
       "vout_max_V": 5.02836425485226,
       "within_numeric_voltage_limits": true,
-      "diagnostics": {
-        "errors": [],
-        "warnings": []
-      },
       "conditions": {
         "path_R": 0.13674453593189015,
         "hdmi_load": 0.05,
@@ -133,10 +113,6 @@
       "v33_max_valid_input_V": 3.4952778858061095,
       "vout_max_V": 5.028344657696628,
       "within_numeric_voltage_limits": false,
-      "diagnostics": {
-        "errors": [],
-        "warnings": []
-      },
       "conditions": {
         "path_R": 0.13674453593189015,
         "hdmi_load": 0.05,
@@ -156,10 +132,6 @@
       "v33_max_valid_input_V": 3.293589161022344,
       "vout_max_V": 5.028362210327428,
       "within_numeric_voltage_limits": true,
-      "diagnostics": {
-        "errors": [],
-        "warnings": []
-      },
       "conditions": {
         "path_R": 0.13674453593189015,
         "hdmi_load": 0.05,
@@ -178,10 +150,6 @@
       "v33_max_valid_input_V": 3.3570305155786393,
       "vout_max_V": 5.028338442480933,
       "within_numeric_voltage_limits": true,
-      "diagnostics": {
-        "errors": [],
-        "warnings": []
-      },
       "conditions": {
         "path_R": 0.13674453593189015,
         "hdmi_load": 0.05,
@@ -201,10 +169,6 @@
       "v33_max_valid_input_V": 3.3000039407151593,
       "vout_max_V": 5.031785360624153,
       "within_numeric_voltage_limits": true,
-      "diagnostics": {
-        "errors": [],
-        "warnings": []
-      },
       "conditions": {
         "path_R": 0.13674453593189015,
         "hdmi_load": 0.05,
@@ -223,10 +187,6 @@
       "v33_max_valid_input_V": 3.2340037990278447,
       "vout_max_V": 4.851106746374052,
       "within_numeric_voltage_limits": true,
-      "diagnostics": {
-        "errors": [],
-        "warnings": []
-      },
       "conditions": {
         "path_R": 0.13674453593189015,
         "hdmi_load": 0.05,
@@ -255,10 +215,6 @@
       "v33_max_valid_input_V": 3.3000039407519397,
       "vout_max_V": 5.028333461253583,
       "within_numeric_voltage_limits": true,
-      "diagnostics": {
-        "errors": [],
-        "warnings": []
-      },
       "conditions": {
         "path_R": 0.13674453593189015,
         "hdmi_load": 0.05,
@@ -274,10 +230,6 @@
       "v33_max_valid_input_V": 3.3000038336398636,
       "vout_max_V": 4.851906984506593,
       "within_numeric_voltage_limits": true,
-      "diagnostics": {
-        "errors": [],
-        "warnings": []
-      },
       "conditions": {
         "path_R": 0.17167592763569148,
         "hdmi_load": 0.05,
@@ -301,12 +253,6 @@
       "v33_max_valid_input_V": 3.3000560572526494,
       "vout_max_V": 5.0283253999664534,
       "within_numeric_voltage_limits": true,
-      "diagnostics": {
-        "errors": [],
-        "warnings": [
-          "Warning: Value of resistor rptc is too small, set to 1.000000e-12"
-        ]
-      },
       "conditions": {
         "path_R": 0.13674453593189015,
         "hdmi_load": 0.05,
@@ -327,12 +273,6 @@
       "v33_max_valid_input_V": 3.300001376741387,
       "vout_max_V": 5.028340417743202,
       "within_numeric_voltage_limits": true,
-      "diagnostics": {
-        "errors": [],
-        "warnings": [
-          "Warning: Value of resistor rptc is too small, set to 1.000000e-12"
-        ]
-      },
       "conditions": {
         "path_R": 0.13674453593189015,
         "hdmi_load": 0.05,
@@ -353,12 +293,6 @@
       "v33_max_valid_input_V": 3.300001618504406,
       "vout_max_V": 5.028365608792092,
       "within_numeric_voltage_limits": true,
-      "diagnostics": {
-        "errors": [],
-        "warnings": [
-          "Warning: Value of resistor rptc is too small, set to 1.000000e-12"
-        ]
-      },
       "conditions": {
         "path_R": 0.13674453593189015,
         "hdmi_load": 0.05,
@@ -377,10 +311,6 @@
       "v33_max_valid_input_V": 3.3000000000396703,
       "vout_max_V": 5.0283267913088805,
       "within_numeric_voltage_limits": true,
-      "diagnostics": {
-        "errors": [],
-        "warnings": []
-      },
       "conditions": {
         "path_R": 0.13674453593189015,
         "hdmi_load": 0.05,
@@ -399,10 +329,6 @@
       "v33_max_valid_input_V": 3.300000833781641,
       "vout_max_V": 5.051775600159191,
       "within_numeric_voltage_limits": true,
-      "diagnostics": {
-        "errors": [],
-        "warnings": []
-      },
       "conditions": {
         "path_R": 0.13674453593189015,
         "hdmi_load": 0.05,
@@ -419,37 +345,12 @@
       "v33_max_valid_input_V": 3.300016503563886,
       "vout_max_V": 5.018606634916114,
       "within_numeric_voltage_limits": true,
-      "diagnostics": {
-        "errors": [],
-        "warnings": []
-      },
       "conditions": {
         "path_R": 0.13674453593189015,
         "hdmi_load": 0.05,
         "ldo_trace_L": 6e-09,
         "ldo_trace_R": 0.011,
         "softstart": 0.01
-      }
-    },
-    {
-      "name": "spark-lite-a-switch-cycle",
-      "vcore_min_valid_input_V": 4.869361675737782,
-      "vcore_max_valid_input_V": 4.970330082411172,
-      "v33_min_valid_input_V": 3.299787089174976,
-      "v33_max_valid_input_V": 3.300136777729812,
-      "vout_max_V": 5.028337988186793,
-      "within_numeric_voltage_limits": true,
-      "diagnostics": {
-        "errors": [],
-        "warnings": []
-      },
-      "conditions": {
-        "path_R": 0.13674453593189015,
-        "hdmi_load": 0.05,
-        "ldo_trace_L": 6e-09,
-        "ldo_trace_R": 0.011,
-        "switch_off": true,
-        "stop": 0.055
       }
     },
     {
@@ -460,10 +361,6 @@
       "v33_max_valid_input_V": 3.2340037990521955,
       "vout_max_V": 4.851126023683388,
       "within_numeric_voltage_limits": true,
-      "diagnostics": {
-        "errors": [],
-        "warnings": []
-      },
       "conditions": {
         "path_R": 0.13674453593189015,
         "hdmi_load": 0.05,
@@ -493,10 +390,6 @@
       "v33_max_valid_input_V": 3.3000038335675304,
       "vout_max_V": 4.851934587981638,
       "within_numeric_voltage_limits": true,
-      "diagnostics": {
-        "errors": [],
-        "warnings": []
-      },
       "conditions": {
         "path_R": 0.13674453593189015,
         "hdmi_load": 0.05,
@@ -516,7 +409,7 @@
       }
     }
   ],
-  "passed": 19,
+  "passed": 18,
   "voltage_limits": {
     "core_V": [
       4.5,

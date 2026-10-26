@@ -1,46 +1,45 @@
-References,Value,Quantity per board,LCSC,URL,Assembly plan,Revision status
-J1,DC-005-5A-2.0,1,C381116,https://www.lcsc.com/product-detail/C381116.html,THT PCBA quotation pending; LCSC hand-solder fallback,Legacy review only; main-power revision pending; do not fabricate
-F1,PTC 3A hold,1,C47002391,https://www.lcsc.com/product-detail/C47002391.html,SMT PCBA planned; supplier approval pending,Legacy review only; main-power revision pending; do not fabricate
-"D1,D2,D4",SS54,3,C22452,https://www.lcsc.com/product-detail/C22452.html,SMT PCBA planned; supplier approval pending,Legacy review only; main-power revision pending; do not fabricate
-D3,SMBJ15A,1,C699013,https://www.lcsc.com/product-detail/C699013.html,SMT PCBA planned; supplier approval pending,Legacy review only; main-power revision pending; do not fabricate
-C1,100u/35V,1,C2983388,https://www.lcsc.com/product-detail/C2983388.html,SMT PCBA planned; supplier approval pending,Legacy review only; main-power revision pending; do not fabricate
-J2,USB-C PD in,1,C5246813,https://www.lcsc.com/product-detail/C5246813.html,PCBA required; supplier approval pending,Legacy review only; main-power revision pending; do not fabricate
-U1,CH224K,1,C970725,https://www.lcsc.com/product-detail/C970725.html,SMT PCBA planned; supplier approval pending,Legacy review only; main-power revision pending; do not fabricate
-"R1,R36,R37,R52,R6",10k,5,C25804,https://www.lcsc.com/product-detail/C25804.html,SMT PCBA planned; supplier approval pending,Legacy review only; main-power revision pending; do not fabricate
-C2,1u/50V,1,C15849,https://www.lcsc.com/product-detail/C15849.html,SMT PCBA planned; supplier approval pending,Legacy review only; main-power revision pending; do not fabricate
-"R2,R42,R43,R44,R45",1k,5,C21190,https://www.lcsc.com/product-detail/C21190.html,SMT PCBA planned; supplier approval pending,Legacy review only; main-power revision pending; do not fabricate
-"R3,R5",0R,2,C21189,https://www.lcsc.com/product-detail/C21189.html,SMT PCBA planned; supplier approval pending,Legacy review only; main-power revision pending; do not fabricate
-U2,TPS5430DDAR,1,C9864,https://www.lcsc.com/product-detail/C9864.html,SMT PCBA planned; supplier approval pending,Legacy review only; main-power revision pending; do not fabricate
-C3,10n,1,C57112,https://www.lcsc.com/product-detail/C57112.html,SMT PCBA planned; supplier approval pending,Legacy review only; main-power revision pending; do not fabricate
-L1,15u MS1040-150M,1,C380054,https://www.lcsc.com/product-detail/C380054.html,SMT PCBA planned; supplier approval pending,Legacy review only; main-power revision pending; do not fabricate
-R7,3.3k,1,C22978,https://www.lcsc.com/product-detail/C22978.html,SMT PCBA planned; supplier approval pending,Legacy review only; main-power revision pending; do not fabricate
-"R41,R47,R48,R49,R50,R8",100k,6,C25803,https://www.lcsc.com/product-detail/C25803.html,SMT PCBA planned; supplier approval pending,Legacy review only; main-power revision pending; do not fabricate
-R9,15k,1,C22809,https://www.lcsc.com/product-detail/C22809.html,SMT PCBA planned; supplier approval pending,Legacy review only; main-power revision pending; do not fabricate
-"C4,C5",10u/50V,2,C13585,https://www.lcsc.com/product-detail/C13585.html,SMT PCBA planned; supplier approval pending,Legacy review only; main-power revision pending; do not fabricate
-C6,100n/50V,1,C14663,https://www.lcsc.com/product-detail/C14663.html,SMT PCBA planned; supplier approval pending,Legacy review only; main-power revision pending; do not fabricate
-C7,220u/10V POSCAP,1,C242173,https://www.lcsc.com/product-detail/C242173.html,SMT PCBA planned; supplier approval pending,Legacy review only; main-power revision pending; do not fabricate
-U3,XC6206P332MR-G,1,C5446,https://www.lcsc.com/product-detail/C5446.html,SMT PCBA planned; supplier approval pending,Legacy review only; main-power revision pending; do not fabricate
-C10,10u/16V,1,C13585,https://www.lcsc.com/product-detail/C13585.html,SMT PCBA planned; supplier approval pending,Legacy review only; main-power revision pending; do not fabricate
-C11,22u/10V,1,C12891,https://www.lcsc.com/product-detail/C12891.html,SMT PCBA planned; supplier approval pending,Legacy review only; main-power revision pending; do not fabricate
-J3,2.54-2*15P,1,C56496,https://www.lcsc.com/product-detail/C56496.html,THT PCBA quotation pending; LCSC hand-solder fallback,Legacy review only; main-power revision pending; do not fabricate
-"R10,R11,R12,R13,R14,R15,R16,R19,R20,R21,R22,R23,R24,R26,R27",680R,15,C23228,https://www.lcsc.com/product-detail/C23228.html,SMT PCBA planned; supplier approval pending,Legacy review only; main-power revision pending; do not fabricate
-J4,SOCKET XDAP-4042044-20401,1,C22471982,https://www.lcsc.com/product-detail/C22471982.html,PCBA required; supplier approval pending,Legacy review only; main-power revision pending; do not fabricate
-J5,HDMI OUT,1,C916313,https://www.lcsc.com/product-detail/C916313.html,PCBA required; supplier approval pending,Legacy review only; main-power revision pending; do not fabricate
-"C12,C13,C14,C15,C16,C17,C18,C19",100n,8,C1525,https://www.lcsc.com/product-detail/C1525.html,SMT PCBA planned; supplier approval pending,Legacy review only; main-power revision pending; do not fabricate
-"R28,R29,R32,R33,R34,R35",510R,6,C23193,https://www.lcsc.com/product-detail/C23193.html,SMT PCBA planned; supplier approval pending,Legacy review only; main-power revision pending; do not fabricate
-"R30,R31",510R,2,C25123,https://www.lcsc.com/product-detail/C25123.html,SMT PCBA planned; supplier approval pending,Legacy review only; main-power revision pending; do not fabricate
-"U4,U5,U6",RCLAMP0524P,3,C293965,https://www.lcsc.com/product-detail/C293965.html,SMT PCBA planned; supplier approval pending,Legacy review only; main-power revision pending; do not fabricate
-F2,PTC 500mA,1,C315893,https://www.lcsc.com/product-detail/C315893.html,SMT PCBA planned; supplier approval pending,Legacy review only; main-power revision pending; do not fabricate
-"Q1,Q2,Q3,Q4",2N7002,4,C8545,https://www.lcsc.com/product-detail/C8545.html,SMT PCBA planned; supplier approval pending,Legacy review only; main-power revision pending; do not fabricate
-"R38,R39",2.2k,2,C4190,https://www.lcsc.com/product-detail/C4190.html,SMT PCBA planned; supplier approval pending,Legacy review only; main-power revision pending; do not fabricate
-"R40,R51",47k,2,C25819,https://www.lcsc.com/product-detail/C25819.html,SMT PCBA planned; supplier approval pending,Legacy review only; main-power revision pending; do not fabricate
-"D5,D6,D7,D8",LED,4,C2286,https://www.lcsc.com/product-detail/C2286.html,SMT PCBA planned; supplier approval pending,Legacy review only; main-power revision pending; do not fabricate
-"SW1,SW2",TS-1187A-B-A-B,2,C318884,https://www.lcsc.com/product-detail/C318884.html,SMT PCBA planned; supplier approval pending,Legacy review only; main-power revision pending; do not fabricate
-SW3,DS-02BLP,1,C692500,https://www.lcsc.com/product-detail/C692500.html,Obsolete FPGA-stop switch; removed in main-power revision,Legacy review only; main-power revision pending; do not fabricate
-"U7,U8",SN74CB3Q3245PWR,2,C470961,https://www.lcsc.com/product-detail/C470961.html,SMT PCBA planned; supplier approval pending,Legacy review only; main-power revision pending; do not fabricate
-"C20,C21,C22,C23,C24",100n,5,C14663,https://www.lcsc.com/product-detail/C14663.html,SMT PCBA planned; supplier approval pending,Legacy review only; main-power revision pending; do not fabricate
-U9,TPS3839G33DBZR,1,C485802,https://www.lcsc.com/product-detail/C485802.html,SMT PCBA planned; supplier approval pending,Legacy review only; main-power revision pending; do not fabricate
-U10,TPS3839K50DBZR,1,C702204,https://www.lcsc.com/product-detail/C702204.html,SMT PCBA planned; supplier approval pending,Legacy review only; main-power revision pending; do not fabricate
-JP1,B-2100S02P-A110,1,C124375,https://www.lcsc.com/product-detail/C124375.html,THT PCBA quotation pending; LCSC hand-solder fallback,Legacy review only; main-power revision pending; do not fabricate
-R46,22k,1,C31850,https://www.lcsc.com/product-detail/C31850.html,SMT PCBA planned; supplier approval pending,Legacy review only; main-power revision pending; do not fabricate
-Q5,MMBT3904,1,C20526,https://www.lcsc.com/product-detail/C20526.html,SMT PCBA planned; supplier approval pending,Legacy review only; main-power revision pending; do not fabricate
+References,Value,Quantity per board,LCSC,URL,Assembly
+J1,DC-005-5A-2.0,1,C381116,https://www.lcsc.com/product-detail/C381116.html,tht
+F1,PTC 3A hold,1,C47002391,https://www.lcsc.com/product-detail/C47002391.html,smt
+"D1,D2,D4",SS54,3,C22452,https://www.lcsc.com/product-detail/C22452.html,smt
+D3,SMBJ15A,1,C699013,https://www.lcsc.com/product-detail/C699013.html,smt
+C1,100u/35V,1,C2983388,https://www.lcsc.com/product-detail/C2983388.html,smt
+J2,USB-C PD in,1,C5246813,https://www.lcsc.com/product-detail/C5246813.html,mandatory
+U1,CH224K,1,C970725,https://www.lcsc.com/product-detail/C970725.html,smt
+"R1,R36,R37,R52,R6",10k,5,C25804,https://www.lcsc.com/product-detail/C25804.html,smt
+C2,1u/50V,1,C15849,https://www.lcsc.com/product-detail/C15849.html,smt
+"R2,R42,R43,R44,R45",1k,5,C21190,https://www.lcsc.com/product-detail/C21190.html,smt
+"R3,R5",0R,2,C21189,https://www.lcsc.com/product-detail/C21189.html,smt
+U2,TPS5430DDAR,1,C9864,https://www.lcsc.com/product-detail/C9864.html,smt
+C3,10n,1,C57112,https://www.lcsc.com/product-detail/C57112.html,smt
+L1,15u MS1040-150M,1,C380054,https://www.lcsc.com/product-detail/C380054.html,smt
+R7,3.3k,1,C22978,https://www.lcsc.com/product-detail/C22978.html,smt
+"R41,R47,R48,R49,R50,R8",100k,6,C25803,https://www.lcsc.com/product-detail/C25803.html,smt
+R9,15k,1,C22809,https://www.lcsc.com/product-detail/C22809.html,smt
+"C4,C5",10u/50V,2,C13585,https://www.lcsc.com/product-detail/C13585.html,smt
+C6,100n/50V,1,C14663,https://www.lcsc.com/product-detail/C14663.html,smt
+C7,220u/10V POSCAP,1,C242173,https://www.lcsc.com/product-detail/C242173.html,smt
+U3,XC6206P332MR-G,1,C5446,https://www.lcsc.com/product-detail/C5446.html,smt
+C10,10u/16V,1,C13585,https://www.lcsc.com/product-detail/C13585.html,smt
+C11,22u/10V,1,C12891,https://www.lcsc.com/product-detail/C12891.html,smt
+"R10,R11,R12,R13,R14,R15,R16,R19,R20,R21,R22,R23,R24,R26,R27",680R,15,C23228,https://www.lcsc.com/product-detail/C23228.html,smt
+J4,SOCKET XDAP-4042044-20401,1,C22471982,https://www.lcsc.com/product-detail/C22471982.html,mandatory
+J5,HDMI OUT,1,C916313,https://www.lcsc.com/product-detail/C916313.html,mandatory
+"C12,C13,C14,C15,C16,C17,C18,C19",100n,8,C1525,https://www.lcsc.com/product-detail/C1525.html,smt
+"R28,R29,R32,R33,R34,R35",510R,6,C23193,https://www.lcsc.com/product-detail/C23193.html,smt
+"R30,R31",510R,2,C25123,https://www.lcsc.com/product-detail/C25123.html,smt
+"U4,U5,U6",RCLAMP0524P,3,C293965,https://www.lcsc.com/product-detail/C293965.html,smt
+F2,PTC 500mA,1,C315893,https://www.lcsc.com/product-detail/C315893.html,smt
+"Q1,Q2,Q3,Q4",2N7002,4,C8545,https://www.lcsc.com/product-detail/C8545.html,smt
+"R38,R39",2.2k,2,C4190,https://www.lcsc.com/product-detail/C4190.html,smt
+"R40,R51",47k,2,C25819,https://www.lcsc.com/product-detail/C25819.html,smt
+"D5,D6,D7,D8",LED,4,C2286,https://www.lcsc.com/product-detail/C2286.html,smt
+"SW1,SW2",TS-1187A-B-A-B,2,C318884,https://www.lcsc.com/product-detail/C318884.html,smt
+"U7,U8",SN74CB3Q3245PWR,2,C470961,https://www.lcsc.com/product-detail/C470961.html,smt
+"C20,C21,C22,C23,C24",100n,5,C14663,https://www.lcsc.com/product-detail/C14663.html,smt
+U9,TPS3839G33DBZR,1,C485802,https://www.lcsc.com/product-detail/C485802.html,smt
+U10,TPS3839K50DBZR,1,C702204,https://www.lcsc.com/product-detail/C702204.html,smt
+JP1,B-2100S02P-A110,1,C124375,https://www.lcsc.com/product-detail/C124375.html,tht
+R46,22k,1,C31850,https://www.lcsc.com/product-detail/C31850.html,smt
+Q5,MMBT3904,1,C20526,https://www.lcsc.com/product-detail/C20526.html,smt
+J3,2.54-2*15P,1,C56496,https://www.lcsc.com/product-detail/C56496.html,manual

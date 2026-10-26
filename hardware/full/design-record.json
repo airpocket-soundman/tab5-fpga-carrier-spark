@@ -1,7 +1,14 @@
 {
-  "native_project_sha256": "69fb924008407e4fcaa3fe319c920a7028f84e411bf66862523c130bd4ce0349",
-  "components": 103,
-  "bom_rows": 45,
+  "native_project_sha256": "8091f1cf601e0be6aca259650e2fc1898012ebb4b6f684bd78a66cc73ebdbde0",
+  "components": 117,
+  "pcba_components": 101,
+  "manual_components": 1,
+  "smt_side": "top only",
+  "manual_refs": [
+    "J3"
+  ],
+  "power_switch": "omitted",
+  "bom_rows": 44,
   "board_dimensions_mm": [
     125,
     78
@@ -10,6 +17,11 @@
   "pcb_drc_violations": 0,
   "schematic_fatal_errors": 0,
   "schematic_warnings": 13,
-  "connected_schematic_pins_verified": 482,
-  "checks_scope": "Native project connectivity, component values, copper pad positions, track/via net and geometry cross-checks. Physical fit, full DFM and warning classification pending."
+  "connected_schematic_pins_verified": 480,
+  "checks_scope": "Native project connectivity, component values, copper pad positions, track/via net and geometry cross-checks. Physical fit, full DFM and warning classification pending.",
+  "manufacturing_files_are_a_matched_set": true,
+  "supplied_gerber_cpl_origin_mm": [
+    2,
+    79
+  ]
 }

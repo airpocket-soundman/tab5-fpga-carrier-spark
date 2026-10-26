@@ -1,46 +1,54 @@
 # Tab5 FPGA Carrier — Spark
 
-> **主電源改訂中・発注不可。公開中の回路・PCB・解析は旧SW3（FPGA専用停止）構成です。外部12VをTab5とFPGAへ一括ON/OFFするオルタネート主電源は未反映です。Tab5の内蔵バッテリー動作は停止対象に含めません。**
+**r4：SMTは表面のみ。主電源スイッチと旧FPGA停止SW3は省略。J3はLCSC別購入・手はんだ。見積レビュー候補であり、業者の実装承認と実機検証は未完了です。**
 
 **日本語** · [中文](README.zh.md) · [English](README.md)
 
-**[日中英切替の設計・解析ページ](https://airpocket-soundman.github.io/tab5-fpga-carrier-spark/)**
+[日中英切替の設計・解析ページ](https://airpocket-soundman.github.io/tab5-fpga-carrier-spark/)
 
-M5Stack Tab5とTang Primer20K Coreをつなぐ、LCSC優先の共通キャリアです。FPGA側128MB DDR3の**RAMストレージ利用、汎用GPU、グラフィックアクセラレータの研究**を想定しています。外部メモリは専用APIで明示的に読み書きするデータ領域で、Tab5の通常RAMが自動で増える構成ではありません。Linuxとグラフィックスは別ソフト・別ビットストリームで使用します。
-
-2026-10-26現在、設計レビュー・EasyEDA Spark応募準備段階です。実通信・DDR3初期化・描画性能・筐体適合・製造承認は未確認。応募、材料申請、製造注文、支払いは未実施です。
+M5Stack Tab5とTang Primer20K Coreを接続する4層キャリアです。FPGA側128MB DDR3の**RAMストレージ利用、汎用GPU、グラフィックアクセラレータの研究**を想定しています。DDR3は専用APIで明示的にアクセスするデータ領域であり、Tab5の通常RAMが自動で増える構成ではありません。Linuxとグラフィックスは別ソフト・別ビットストリームで使用します。
 
 | | フル版 | 廉価版A |
 | --- | --- | --- |
 | 基板 |125×78mm・4層 |99×78mm・4層 |
 | 機能 |安定化12Vバレル・USB PD12V・HDMI |同じ機能を保持 |
 | 電源部品 |TPS5430・Bourns15µH・TLV1117LV33 |TPS5430・COILMX15µH・XC6206 |
-| PCBA見積候補 |103部品・45行 |105部品・45行 |
-| EasyEDA内で実計算完了 |172条件 |187条件 |
-| 電源の数値範囲内 |6/6、局所LDO動特性は対象外 |19/21、厳しい感度試験の不合格2件を含む |
+| PCBA見積候補 |101部品・43行 |103部品・43行 |
+| 手はんだ |J3/C56496。PCBA BOM/CPLから除外 |同じ |
+| SMT実装面 |表面のみ |表面のみ |
+| EasyEDA内で計算完了 |207条件 |221条件 |
+| 電源の数値範囲内 |6/6。局所LDO動特性は対象外 |18/20。厳しい感度試験の範囲外2件を含む |
+| HDMI工学的判定条件 |35/35 |35/35 |
 | PCB DRC |違反0 |違反0 |
-| 回路図 |致命的エラー0・警告13件は分類待ち |同じ |
+| 回路図 |致命的エラー0・警告13件は未分類 |同じ |
 
-廉価版は基板面積と部品選定によるコスト低減が目的です。実価格差は見積待ちで、帰還抵抗追加のため部品点数はフル版より多くなります。
+計算完了と回路条件への合格は別の指標です。部品在庫、実装受理、回転、実物嵌合、実機動作の確認は残っています。製造リリース、応募、材料申請、注文、支払いは未実施です。
 
-## 設計データ
+## データ
 
-- [フル版EasyEDA Proプロジェクト](hardware/full/spark-lcsc-priority-review.epro2)・[BoM](hardware/full/bom.csv)・[製造レビュー用データ](hardware/full)
-- [廉価版A EasyEDA Proプロジェクト](hardware/lite-a/spark-lite-a-lcsc-review.epro2)・[BoM](hardware/lite-a/bom.csv)・[製造レビュー用データ](hardware/lite-a)
-- [フル版のEasyEDA解析結果](simulation/full)・[廉価版AのEasyEDA解析結果](simulation/lite-a)
+- [フル版EasyEDA Pro](hardware/full/spark-lcsc-priority-review.epro2)・[BoM](hardware/full/bom.csv)・[Gerber/PCBA BOM/CPL/組立図](hardware/full)
+- [廉価版A EasyEDA Pro](hardware/lite-a/spark-lite-a-lcsc-review.epro2)・[BoM](hardware/lite-a/bom.csv)・[Gerber/PCBA BOM/CPL/組立図](hardware/lite-a)
+- [フル版EasyEDA解析](simulation/full)・[廉価版A EasyEDA解析](simulation/lite-a)・[解析手法と制約](simulation/README.md)
+- [実装指示](hardware/ASSEMBLY.md)・[r4改訂](hardware/MAIN_POWER_REVISION.md)・[ファイルハッシュ](manifest.json)
 
-`.epro2`には回路図・PCB・ライブラリを収録。BoM/CPL、Gerber、組立図は発注レビュー候補であり、そのまま製造承認済みという意味ではありません。
+`.epro2`には回路図・PCB・ライブラリを収録。PCBA見積もりには同梱の`jlc-bom.csv`と`jlc-cpl.csv`を組で使用してください。両方ともJ3を除外しています。全体の`bom.csv`では手はんだJ3も区別して記載します。
 
-## 調達・組立と動作条件
+## 調達・動作条件
 
-基板上の装着予定部品はすべてLCSC番号を選定。DCジャックC381116、裏面Tab5ヘッダーC56496、ARMヘッダーC124375、停止スイッチC692500も波はんだ実装見積に含めます。業者が実装できない場合はLCSC購入・手はんだ、LCSCに適合品がない場合のみ秋月が代替です。カタログ上の対応と個別注文の承認は異なります。
+選定部品はLCSC優先。**J3/C56496はLCSC別購入・手はんだ**で、裏向きの嵌合方向を維持します。ユーザーが裏面にTHTヘッダーを取り付けることは両面SMT実装ではありません。J2/J4/J5はPCBA必須。J5はスルーホールのシェル端子もはんだ付けします。J1/C381116とJP1/C124375のTHT実装可否は業者確認が必要です。不可なら適合する同じLCSC部品を別購入して手はんだとし、適合品がLCSCにない場合だけ秋月を検討します。片面SMTでも全品の実装受理を保証しません。
 
-ショートピンC5305は別梱包・初期未装着。Tab5とCoreはユーザー購入で支援対象に含めません。LCSC単品購入へのSpark支援は通常支援として確認できていません。ねじ・スペーサ・カバーは機構確認後に決定します。
+SW3とr3の主電源回路はありません。外部給電が有効なら基板の既存電源回路が動作し、基板上で外部給電を一括切断したりFPGAだけを停止したりするスイッチはありません。リセット・ユーザーボタン・BUS ARMは維持。ショートピンC5305は別梱包・初期未装着です。Tab5とCoreはユーザー購入でPCBA・支援申請対象に含めません。
 
-初期通信は**1MHz、弱ドライブ/SLOW、DATA setup/hold各250ns以上、DIR待ち500ns以上**。通信150条件では受信端150/150、送信端60/150が電圧範囲内で、高速エッジの制約が残ります。周期モデルの1MHzは4/4通過ですが、10〜40MHz安定動作や実機DMAの証明ではありません。
+初期通信は**1MHz、弱ドライブ/SLOW、DATA setup/hold各250ns以上、DIR待ち500ns以上**。各版の通信150条件は受信端150/150、送信端60/150が範囲内です。高速エッジの不合格条件も公開。周期モデルの1MHzは4/4ですが、10〜40MHz安定動作や実機DMA・GPU性能の証明ではありません。
 
-廉価版の局所3.3Vは通常10mA以下・外部給電なし。50mAへの急変など2条件が±5%を外れる結果も公開しています。安定化12Vを使用し、Core通常0.5Aを初回評価条件とします。
+安定化12Vを使用し、Core通常0.5Aを初回評価条件とします。廉価版の局所3.3Vは通常10mA以下・外部給電なし。50mA急変と遅いLDOループの感度試験2条件が±5%を外れます。
 
-解析は公式NGspice46 WASMをEasyEDAのAPI Gateway内で実行した等価回路モデルです。製造回路図全体の自動SPICE解析、熱評価、PD交渉、HDMI認証、実機性能を示しません。
+HDMIは結合RLGC線路、仮定したThevenin駆動源、理想受信端の等価モデルで、ケーブルは含みません。中心100mV・窓0.4UIは工学的判定条件であり、HDMI認証のマスクではありません。ベンダーIBISモデル、認証、実機映像出力は未確認です。
 
-Sparkへの登録・材料申請・採択を示す公開ではありません。設計工程を含む応募資格、完成品・筐体要件は主催者への確認が残っています。登録時の自動入金を想定せず、設計・見積の審査とクーポン承認を前提とします。
+解析は公式NGspice46 WASMをEasyEDA API Gateway内で実行した等価回路モデルです。製造回路図全体の自動SPICE解析、実スイッチング・熱・PD交渉の検証ではありません。
+
+## Spark
+
+[国外向けEasyEDA Spark](https://oshwlab.com/activities/easyeda-spark-2026?tab=2#P1)への応募準備です。設計工程を含む資格、完成品要件、支援受理は主催者確認が必要です。登録後の自動入金を想定せず、設計・見積の審査とクーポン承認を前提とします。LCSC単品購入への支援は未確認。応募・材料申請・製造注文・支払いは未実施です。
+
+Copyright2026 airpocket-soundman。[MIT](LICENSE)および[第三者ライセンス表示](THIRD_PARTY_NOTICES.md)。

@@ -1,15 +1,29 @@
 {
   "date": "2026-10-26",
+  "published_revision": "r4 single-sided SMT, SW3 omitted",
   "fabrication_released": false,
-  "published_revision": "legacy FPGA-only stop",
-  "requested_revision": "alternate switch controlling external DC12V and USB PD12V feed to Tab5 HVIN and Core converter together",
-  "tab5_battery_shutdown_required": false,
-  "new_pcb_available": false,
-  "new_native_easyeda_available": false,
-  "new_easyeda_power_simulation_available": false,
-  "legacy_simulation_cases": {
-    "full": 172,
-    "lite_a": 187
+  "smt_side": "top only",
+  "main_power_switch": "omitted by user-authorized fallback",
+  "fpga_only_shutdown_switch": "removed",
+  "manual_assembly": {
+    "J3": {
+      "lcsc": "C56496",
+      "pcba_bom": false,
+      "pcba_cpl": false,
+      "mating_direction": "bottom"
+    }
   },
-  "legacy_results_validate_new_main_power": false
+  "tab5_battery_shutdown_required": false,
+  "pcba_candidates": {
+    "full": 101,
+    "lite_a": 103
+  },
+  "bom_rows_pcba": 43,
+  "easyeda_simulation_cases": {
+    "full": 207,
+    "lite_a": 221
+  },
+  "supplier_assembly_acceptance": "pending",
+  "hardware_validation": "pending",
+  "spark_entry_submitted": false
 }

@@ -1,57 +1,54 @@
 # Tab5 FPGA Carrier — Spark
 
-> **Main-power revision in progress — do not fabricate. Published schematics, PCBs and simulations use the old SW3 FPGA-only shutdown circuit. The latching main switch that cuts external12V to both Tab5 and FPGA is not yet implemented in these files. Tab5 battery operation remains outside the switch scope.**
+**r4: top-side SMT only. Main-power and FPGA-only shutdown switch SW3 are omitted. J3 is separately purchased from LCSC and manually soldered. Quotation-review candidate; manufacturer approval and hardware validation are pending.**
 
 [日本語](README.ja.md) · [中文](README.zh.md) · **English**
 
-**[Design notebook / 日中英 GitHub Pages](https://airpocket-soundman.github.io/tab5-fpga-carrier-spark/)**
+[Trilingual design and simulation site](https://airpocket-soundman.github.io/tab5-fpga-carrier-spark/)
 
-Two LCSC-first carrier designs connect **M5Stack Tab5 and Tang Primer 20K Core** for explicitly addressed external DDR3 RAM storage, general-purpose GPU research and graphics acceleration. Linux memory experiments and graphics experiments use separate software and FPGA bitstreams. The Core's128MB DDR3 does not automatically become Tab5 system RAM.
-
-Status: **engineering review / EasyEDA Spark entry preparation**,2026-10-26. Physical communication, DDR3 initialization, rendering performance, enclosure fit and manufacturing acceptance remain unverified. No entry, support application, manufacturing order or payment has been submitted through this repository.
+Four-layer carriers connecting M5Stack Tab5 and Tang Primer 20K Core for **FPGA DDR3 RAM storage, general-purpose GPU research and graphics acceleration**. The 128MB DDR3 is an explicitly accessed data store. It does not automatically expand Tab5 system RAM. Linux and graphics experiments use separate software and FPGA bitstreams.
 
 | | Full | Lite A |
 | --- | --- | --- |
-| Board |125×78mm,4 layers |99×78mm,4 layers |
-| Inputs / video |Regulated12V barrel, USB PD12V, HDMI |Same functions retained |
-| Power |TPS5430, Bourns15µH, TLV1117LV33 |TPS5430, COILMX15µH, XC6206P332MR-G |
-| HDMI bias |499Ω |510Ω |
-| PCBA quotation candidates |103 components /45 BOM rows |105 components /45 BOM rows |
-| EasyEDA-run numerical cases |172 |187 |
-| Power cases within model voltage limits |6/6; local LDO dynamics excluded |19/21; includes deliberately severe sensitivity cases |
+| Board |125×78mm, four layers |99×78mm, four layers |
+| Interfaces |Regulated 12V barrel, USB PD12V, HDMI |Same |
+| Supply components |TPS5430, Bourns15µH, TLV1117LV33 |TPS5430, COILMX15µH, XC6206 |
+| PCBA candidates |101 parts /43 BOM rows |103 parts /43 BOM rows |
+| Manual assembly |J3/C56496, outside PCBA BOM and CPL |Same |
+| SMT side |Top only |Top only |
+| Cases calculated inside EasyEDA |207 |221 |
+| Power cases within numerical limits |6/6; TLV1117 dynamics excluded |18/20; two severe sensitivities exceed limits |
+| HDMI engineering criteria |35/35 |35/35 |
 | Native PCB DRC |0 violations |0 violations |
-| Native schematic |0 fatal errors /13 warnings awaiting classification |Same |
+| Native schematic |0 fatal errors /13 unclassified warnings |Same |
 
-Lite A targets lower cost through board area and parts selection; actual savings require manufacturer quotations. The extra feedback resistors make its populated-component count slightly higher.
+Numerical completion and circuit-limit approval are separate measures. Supplier acceptance, stock, rotations, physical fit and hardware operation remain to be verified. Publication does not constitute a fabrication release, entry submission or payment.
 
 ## Files
 
-- [Full native EasyEDA Pro project](hardware/full/spark-lcsc-priority-review.epro2) · [BOM](hardware/full/bom.csv) · [manufacturing review files](hardware/full)
-- [Lite A native EasyEDA Pro project](hardware/lite-a/spark-lite-a-lcsc-review.epro2) · [BOM](hardware/lite-a/bom.csv) · [manufacturing review files](hardware/lite-a)
-- [Full EasyEDA simulation records](simulation/full) · [Lite A EasyEDA simulation records](simulation/lite-a)
-- [Simulation method and limitations](simulation/README.md) · [file hashes](manifest.json)
+- [Full EasyEDA Pro project](hardware/full/spark-lcsc-priority-review.epro2) · [BOM](hardware/full/bom.csv) · [Gerber, PCBA BOM/CPL and drawings](hardware/full)
+- [Lite A EasyEDA Pro project](hardware/lite-a/spark-lite-a-lcsc-review.epro2) · [BOM](hardware/lite-a/bom.csv) · [Gerber, PCBA BOM/CPL and drawings](hardware/lite-a)
+- [Full simulation records](simulation/full) · [Lite A simulation records](simulation/lite-a) · [method and limits](simulation/README.md)
+- [Assembly instructions](hardware/ASSEMBLY.md) · [r4 revision](hardware/MAIN_POWER_REVISION.md) · [file hashes](manifest.json)
 
-Open the `.epro2` project in EasyEDA Pro. It contains the schematic, PCB and project libraries. Manufacturing files are **quotation/review candidates**, not fabrication release. Verify component rotations, pin1, polarity, solderable shell tabs, bottom-header assembly and stock with the manufacturer.
+Each `.epro2` contains the schematic, PCB and libraries. Use the supplied `jlc-bom.csv` and `jlc-cpl.csv` together for the PCBA quotation. They exclude J3. The broader `bom.csv` also identifies the manually soldered J3.
 
-## LCSC-first sourcing
+## Sourcing and operation
 
-All populated board components have selected LCSC IDs. The four former manual-assembly items are now PCBA quotation candidates: DC jack **C381116**, bottom Tab5 header **C56496**, ARM header **C124375**, stop switch **C692500**. Official JLCPCB listings show Extended / Wave Soldering / Economic and Standard; this does not constitute acceptance of this particular board. If assembly is declined, direct LCSC purchase and hand soldering is the fallback. Only unavailable suitable LCSC parts fall back to Akizuki.
+All selected board parts use LCSC IDs. **J3/C56496 is separately purchased and manually soldered**, retaining its bottom-facing mating orientation. Bottom-side THT installation by the user does not require bottom-side SMT assembly. J2/J4/J5 require PCBA, including J5's through-hole shell tabs. J1/C381116 and JP1/C124375 THT acceptance requires supplier confirmation. If declined, purchase the same suitable LCSC part for hand soldering. Akizuki is a fallback only when no suitable LCSC part is available. Single-sided SMT alone does not guarantee acceptance under every assembly service.
 
-The **C5305 shunt is a separate accessory**, initially absent. Tab5 and the Core module are purchased separately and excluded from sponsorship requests. Enclosure, spacers and screws require mechanical review. Standalone LCSC support is not assumed under Spark.
+SW3 and the r3 main-power circuit are absent. External power enables the existing carrier power circuit; there is no board-mounted main switch or FPGA-only shutdown switch. Reset, user button and BUS ARM remain. The C5305 shunt is separately packed and initially absent. Tab5 and Tang Primer 20K Core are user purchases outside PCBA and the sponsorship request.
 
-## Operating envelope
+Begin communication at **1MHz, weak drive/SLOW, DATA setup and hold ≥250ns each, DIR turnaround ≥500ns**. In each variant, receiver-voltage cases pass150/150, but source-voltage cases pass60/150; fast-edge failures remain published. The1MHz periodic model passes4/4. Stable10–40MHz operation, physical DMA and GPU throughput are unverified.
 
-- Stabilized12V input; begin Core bring-up at its documented normal0.5A condition.
-- Initial parallel-link evaluation at **1MHz**, weak drive/SLOW, DATA setup and hold≥250ns each, DIR turnaround≥500ns.
-- Both variants:150 communication sensitivity cases solve;150 receiver-voltage cases pass, but only60 transmitter-voltage cases pass. Fast-edge cases exceed the source envelope. These are not150 unconditional passes.
-- The1MHz periodic model passes4/4 conditions. Stable10–40MHz communication is not established.
-- Lite A local3.3V: normal load≤10mA, no external loads. The50mA step and slow-loop sensitivities exceed±5%; failed cases remain published.
-- Fully modelled switching/thermal behavior, PD negotiation, HDMI certification and physical DMA/DDR3 operation are not established.
+Use regulated12V. Begin Core evaluation at its documented normal0.5A condition. Lite A local3.3V normal load is limited to10mA, without external loads. The50mA step and slow-LDO-loop sensitivities exceed±5%.
 
-The simulations use the official **NGspice46 WASM inside EasyEDA's API Gateway client** and analytical equivalent circuits. They are not automatic SPICE simulation of every component on the manufacturing schematic. The complete product still needs software, FPGA bitstreams, a fitted protective enclosure and hardware demonstration.
+HDMI cases use coupled RLGC lines, an assumed Thevenin driver and ideal receiver without a cable. The100mV center margin and0.4UI window are engineering criteria, not HDMI compliance masks. Vendor IBIS, HDMI certification and actual video output are unverified.
+
+Calculations use the official NGspice46 WASM inside the EasyEDA API Gateway client. They are analytical equivalent circuits, rather than automatic SPICE simulation of the complete manufacturing schematic. Switching, thermal and PD negotiation qualification remain outside this analysis.
 
 ## Spark status
 
-This repository is preparation for the [international EasyEDA Spark program](https://oshwlab.com/activities/easyeda-spark-2026?tab=2#P1), not an assertion of eligibility or acceptance. Design-process eligibility and complete-product requirements still need organizer confirmation. Registration does not automatically provide cash: material support requires an approved design/quotation application and coupons. No prize money or completion coupons are counted as initial funding.
+This repository prepares an application to the [international EasyEDA Spark program](https://oshwlab.com/activities/easyeda-spark-2026?tab=2#P1). Design-process eligibility, complete-product requirements and support approval require organizer confirmation. Registration does not automatically provide development funds. Material support is subject to an approved design/quotation application and coupons. Standalone LCSC support is not assumed. No entry, material application, manufacturing order or payment has been submitted.
 
 Copyright2026 airpocket-soundman. Original material is under [MIT](LICENSE); [third-party notices](THIRD_PARTY_NOTICES.md) apply separately.

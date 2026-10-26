@@ -1,14 +1,14 @@
 {
   "updated": "2026-10-26",
-  "status": "Main-power revision pending; published hardware and simulation are legacy review records. NOT FOR FABRICATION.",
+  "status": "r4 single-sided SMT, SW3 omitted, J3 manually soldered. Quotation candidate; supplier acceptance and hardware validation pending.",
   "variants": {
     "full": {
       "dimensions": [
         125,
         78
       ],
-      "components": 103,
-      "cases": 172,
+      "components": 101,
+      "cases": 207,
       "bom": [
         {
           "refs": "J1",
@@ -172,13 +172,6 @@
           "assemblyType": "smt"
         },
         {
-          "refs": "J3",
-          "value": "2.54-2*15P",
-          "quantity": 1,
-          "lcsc": "C56496",
-          "assemblyType": "tht"
-        },
-        {
           "refs": "R10,R11,R12,R13,R14,R15,R16,R19,R20,R21,R22,R23,R24,R26,R27",
           "value": "680R",
           "quantity": 15,
@@ -270,13 +263,6 @@
           "assemblyType": "smt"
         },
         {
-          "refs": "SW3",
-          "value": "DS-02BLP",
-          "quantity": 1,
-          "lcsc": "C692500",
-          "assemblyType": "obsolete"
-        },
-        {
           "refs": "U7,U8",
           "value": "SN74CB3Q3245PWR",
           "quantity": 2,
@@ -324,6 +310,13 @@
           "quantity": 1,
           "lcsc": "C20526",
           "assemblyType": "smt"
+        },
+        {
+          "refs": "J3",
+          "value": "2.54-2*15P",
+          "quantity": 1,
+          "lcsc": "C56496",
+          "assemblyType": "manual"
         }
       ],
       "power": {
@@ -336,6 +329,10 @@
         "driverPass": 60,
         "maxSettleNs": 91.38782743959577
       },
+      "hdmi": {
+        "cases": 35,
+        "pass": 35
+      },
       "periodic": {
         "cases": 16,
         "oneMHzPass": 4
@@ -347,9 +344,16 @@
         "assembly": "hardware/full/assembly-top.svg"
       },
       "native": {
-        "native_project_sha256": "69fb924008407e4fcaa3fe319c920a7028f84e411bf66862523c130bd4ce0349",
-        "components": 103,
-        "bom_rows": 45,
+        "native_project_sha256": "8091f1cf601e0be6aca259650e2fc1898012ebb4b6f684bd78a66cc73ebdbde0",
+        "components": 117,
+        "pcba_components": 101,
+        "manual_components": 1,
+        "smt_side": "top only",
+        "manual_refs": [
+          "J3"
+        ],
+        "power_switch": "omitted",
+        "bom_rows": 44,
         "board_dimensions_mm": [
           125,
           78
@@ -358,7 +362,7 @@
         "pcb_drc_violations": 0,
         "schematic_fatal_errors": 0,
         "schematic_warnings": 13,
-        "connected_schematic_pins_verified": 482,
+        "connected_schematic_pins_verified": 480,
         "checks_scope": "Native project connectivity, component values, copper pad positions, track/via net and geometry cross-checks. Physical fit, full DFM and warning classification pending."
       }
     },
@@ -367,8 +371,8 @@
         99,
         78
       ],
-      "components": 105,
-      "cases": 187,
+      "components": 103,
+      "cases": 221,
       "bom": [
         {
           "refs": "J1",
@@ -532,13 +536,6 @@
           "assemblyType": "smt"
         },
         {
-          "refs": "J3",
-          "value": "2.54-2*15P",
-          "quantity": 1,
-          "lcsc": "C56496",
-          "assemblyType": "tht"
-        },
-        {
           "refs": "R10,R11,R12,R13,R14,R15,R16,R19,R20,R21,R22,R23,R24,R26,R27",
           "value": "680R",
           "quantity": 15,
@@ -630,13 +627,6 @@
           "assemblyType": "smt"
         },
         {
-          "refs": "SW3",
-          "value": "DS-02BLP",
-          "quantity": 1,
-          "lcsc": "C692500",
-          "assemblyType": "obsolete"
-        },
-        {
           "refs": "U7,U8",
           "value": "SN74CB3Q3245PWR",
           "quantity": 2,
@@ -684,17 +674,28 @@
           "quantity": 1,
           "lcsc": "C20526",
           "assemblyType": "smt"
+        },
+        {
+          "refs": "J3",
+          "value": "2.54-2*15P",
+          "quantity": 1,
+          "lcsc": "C56496",
+          "assemblyType": "manual"
         }
       ],
       "power": {
-        "cases": 21,
-        "pass": 19
+        "cases": 20,
+        "pass": 18
       },
       "link": {
         "cases": 150,
         "receiverPass": 150,
         "driverPass": 60,
         "maxSettleNs": 89.6878295745652
+      },
+      "hdmi": {
+        "cases": 35,
+        "pass": 35
       },
       "periodic": {
         "cases": 16,
@@ -707,9 +708,16 @@
         "assembly": "hardware/lite-a/assembly-top.svg"
       },
       "native": {
-        "native_project_sha256": "def6f0610fecbd016b7b88bbdbdb9167fb2299d79f81ad63ea5e09afdd639d31",
-        "components": 105,
-        "bom_rows": 45,
+        "native_project_sha256": "c689e09a7de0e6d517f5b0265e5392fc15da69ce1a307911447b117530417c8d",
+        "components": 117,
+        "pcba_components": 103,
+        "manual_components": 1,
+        "smt_side": "top only",
+        "manual_refs": [
+          "J3"
+        ],
+        "power_switch": "omitted",
+        "bom_rows": 44,
         "board_dimensions_mm": [
           99,
           78
@@ -718,17 +726,9 @@
         "pcb_drc_violations": 0,
         "schematic_fatal_errors": 0,
         "schematic_warnings": 13,
-        "connected_schematic_pins_verified": 486,
+        "connected_schematic_pins_verified": 484,
         "checks_scope": "Native project connectivity, component values, copper pad positions, track/via net and geometry cross-checks. Physical fit, full DFM and warning classification pending."
       }
     }
-  },
-  "artifactCommit": "714b06bf51303d245a2a695db8103d2ef30105e5",
-  "hardwareRevision": {
-    "published": "legacy-fpga-stop",
-    "requested": "alternate-external-main-power",
-    "fabricationReleased": false,
-    "nativeUpdated": false,
-    "newPowerSimulationExecuted": false
   }
 }

@@ -1,0 +1,12 @@
+{
+  "revision": "r4",
+  "pcb_drc_violations": 0,
+  "bottom_paste_exposure_objects": 0,
+  "U2_top_paste_opening_area_mm2": 8.059999999999967,
+  "U2_bottom_paste_opening_area_mm2": 0.0,
+  "thermal_drill_mm": 0.3,
+  "PTH_count": 335,
+  "NPTH_count": 6,
+  "native_export_sha256": "8b712c928930d2b7f46860d616f2bd3a0efd69459db1e2dee530d45b36db8711",
+  "scope": "Actual native Gerber and Excellon output inspected. Copper-only U2 pad mask/paste suppressed. Complete-board stencil, thermal and supplier DFM approval remain pending."
+}

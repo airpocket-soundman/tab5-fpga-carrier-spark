@@ -1,31 +1,33 @@
-# Main-power revision / 主電源改訂 / 主电源修订
+# r4: single-sided SMT / 片面SMT / 单面SMT
+
+2026-10-26
 
 ## 日本語
 
-主電源改訂中・発注不可。公開中の回路・PCB・解析は旧SW3（FPGA専用停止）構成です。外部12VをTab5とFPGAへ一括ON/OFFするオルタネート主電源は未反映です。Tab5の内蔵バッテリー動作は停止対象に含めません。
+両面SMTをやめるユーザー指示により、主電源スイッチを省略するr4へ変更しました。旧FPGA専用停止SW3も除去しました。r3で検討したU11/R53〜R58/C25/C26はr4にはありません。これは未実装の主電源スイッチを残した版ではなく、スイッチ機能を省く版です。
 
-USB PDとDCジャックの保護・OR合流後、Tab5 HVINとCore降圧入力の分岐前を制御する仕様です。PD交渉回路は上流に残し、リセット・ユーザーボタン・BUS ARMは保持します。旧SW3 C692500は新仕様の部品ではありません。
+フル125×78mm、廉価版A99×78mm、4層、HDMI・USB PD12V・バレル12V、リセット・ユーザーボタン・BUS ARMを維持。SMTは全て表面です。外部給電が有効なら既存電源回路が動作し、基板上に外部給電の一括切断やFPGA専用停止スイッチはありません。Tab5内蔵バッテリーの停止制御もありません。
 
-新部品の保護協調、接点・負荷定格、突入、電圧降下、温度、Tab5バッテリー動作時の逆給電、電源断・再投入の検証が必要です。部品選定・基板変更・EasyEDA反映・同環境での過渡解析が終わるまで、新版の製造データは公開しません。
+J3/C56496はLCSC別購入・手はんだ。PCBA用BOMとCPLの両方から除外し、裏向き嵌合方向は維持します。J1/JP1のTHT実装可否、部品在庫・回転・DFM・実物嵌合は業者と確認が必要です。
 
-BoMの実装列は旧版の記録です。J2/J4/J5はPCBA必須、一般SMDはPCBA予定、J1/J3/JP1はTHT実装の業者確認待ちです。旧SW3は廃止対象と表示します。手はんだ品もLCSC調達を優先し、適合品がLCSCにない場合のみ秋月電子を検討します。Extended登録やLCSC在庫だけで、個別注文の実装が承認されるわけではありません。
+掲載する解析はr4の等価回路をEasyEDA内で再計算した記録です。主電源スイッチが存在しないため、そのON/OFF・突入や遮断の検証結果として扱いません。製造レビュー候補であり、実機・製造承認・Spark支援の受理は未完了です。
 
 ## 中文
 
-主电源修订中，禁止下单。当前公开的原理图、PCB及仿真采用旧SW3（仅停止FPGA供电）配置。用于同时接通/切断Tab5和FPGA外部12V供电的自锁主电源尚未反映。Tab5内置电池运行不在切断范围内。
+按用户要求取消双面SMT，r4省略主电源开关，并移除旧的仅停止FPGA供电的SW3。r3中的U11/R53–R58/C25/C26不属于r4。此版明确省略开关功能，并非保留待实现开关的版本。
 
-在USB PD和DC插座的保护及OR汇合之后、Tab5 HVIN和Core降压输入分支之前控制供电；PD协商电路保留在上游。复位、用户按钮及BUS ARM保持不变。旧SW3 C692500将移除。
+完整版125×78mm、A型99×78mm、四层，保留HDMI、USB PD12V、圆孔12V、复位、用户按钮和BUS ARM。SMT均在正面。外部电源有效时既有电源电路运行，无板上统一断电或仅关闭FPGA的开关，也不控制Tab5内置电池关机。
 
-仍需完成器件和保护协调、额定值、浪涌、电压降、温升、电池运行时的反向供电及断电/重启验证。新版制造文件须在PCB、嘉立创EDA原生数据和实际过渡仿真完成后发布。
+J3/C56496从LCSC单独购买并手焊，从PCBA BOM和CPL同时排除，保留朝向背面的插合方向。J1/JP1的THT受理、库存、旋转、DFM及实物插合须确认。
 
-BoM装配列描述旧版：J2/J4/J5要求PCBA；一般SMD计划PCBA；J1/J3/JP1的THT装配待厂商确认；旧SW3标为待移除。手工焊接器件也优先从LCSC采购，只有无合适器件时才考虑秋月电子。Extended或LCSC库存不等于具体订单已获装配批准。
+发布记录是r4等效电路在嘉立创EDA内的重新计算。不存在主电源开关，因此不得将其作为开关ON/OFF、浪涌或切断的验证。本资料为制造评审候选，实机、制造批准及Spark支持受理尚未完成。
 
 ## English
 
-Main-power revision in progress — do not fabricate. Published schematics, PCBs and simulations use the old SW3 FPGA-only shutdown circuit. The latching main switch that cuts external12V to both Tab5 and FPGA is not yet implemented in these files. Tab5 battery operation remains outside the switch scope.
+The user requested single-sided SMT and permitted omission of the main-power switch. r4 omits it and removes the old FPGA-only shutdown SW3. U11/R53–R58/C25/C26 from r3 are absent. This revision deliberately omits the switch function.
 
-Control power after the protected DC/PD OR node and before the split to Tab5 HVIN and the Core converter. Keep PD negotiation upstream. Retain reset, user button and BUS ARM. Remove the old SW3 C692500 function.
+Full125×78mm and Lite A99×78mm retain four layers, HDMI, USB PD12V, barrel12V, reset, user button and BUS ARM. All SMT is top-side. The existing power circuitry runs while external power is present. There is no board-mounted main or FPGA-only shutdown switch, and no Tab5 battery shutdown control.
 
-Protection coordination, ratings, inrush, voltage drop, temperature, reverse feeding with Tab5 on battery, shutdown and restart remain to be validated. New manufacturing files require a revised PCB, native EasyEDA data and actual transient simulation.
+J3/C56496 is separately purchased from LCSC and hand soldered, excluded from both PCBA BOM and CPL while retaining its bottom-facing mating orientation. J1/JP1 THT acceptance, stock, rotations, DFM and physical mating require review.
 
-BOM assembly labels describe the legacy revision: J2/J4/J5 require PCBA; ordinary SMD parts are planned for PCBA; J1/J3/JP1 need supplier THT approval; old SW3 is marked for removal. Hand-solder parts also use LCSC first, with Akizuki only when no suitable LCSC part exists. Extended listing or LCSC stock does not approve a specific assembly order.
+Published analytical records are r4 equivalent circuits recalculated inside EasyEDA. They do not validate main-switch operation, switched inrush or disconnection, because that switch is absent. Files remain quotation/review candidates; hardware, manufacturing approval and Spark support acceptance are pending.

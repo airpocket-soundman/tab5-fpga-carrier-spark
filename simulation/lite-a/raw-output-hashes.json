@@ -1,4 +1,179 @@
 {
+  "hdmi-CK-1485M-fast_lowZ-prbs7-cell2": {
+    "sha256": "48d5498f1cbfad105b39e74b0ba023357dd95d2a6ae1a388bd70b6268102046c",
+    "bytes": 1982322,
+    "exportSampling": "adaptive solver output"
+  },
+  "hdmi-CK-1485M-nominal-prbs7-cell2": {
+    "sha256": "a4f95ab0d208d856a7d5c44b3a8c5036b1bc2977f0a7560fed32eccbbfb4df77",
+    "bytes": 1982868,
+    "exportSampling": "adaptive solver output"
+  },
+  "hdmi-CK-1485M-weak_highC-prbs7-cell2": {
+    "sha256": "40ab8ea57f4651bed15661f0821419c515c712375f4424c92113e3167335d6e4",
+    "bytes": 1982599,
+    "exportSampling": "adaptive solver output"
+  },
+  "hdmi-CK-251.75M-nominal-prbs7-cell2": {
+    "sha256": "413d65599329c2107d3d0ce535508f96918d094f434795a1d9b67ab37667743e",
+    "bytes": 1984364,
+    "exportSampling": "adaptive solver output"
+  },
+  "hdmi-CK-742.5M-fast_lowZ-prbs7-cell2": {
+    "sha256": "80f3ee4d8a0a2566cfe79fe3368b9a1aa6ac2d50c7ef42d05ec82988bc3ad754",
+    "bytes": 1981343,
+    "exportSampling": "adaptive solver output"
+  },
+  "hdmi-CK-742.5M-nominal-prbs7-cell1": {
+    "sha256": "b604c96164dd0ee656076d5fbd796bd41fd040421c93dafead2b91ef624329bf",
+    "bytes": 1981233,
+    "exportSampling": "adaptive solver output"
+  },
+  "hdmi-CK-742.5M-nominal-prbs7-cell2": {
+    "sha256": "d1e716e40ba7491769a8d0a5d7f8981a1d94d9d7747eedda6b2564eef2df2fb3",
+    "bytes": 1981524,
+    "exportSampling": "adaptive solver output"
+  },
+  "hdmi-CK-742.5M-weak_highC-prbs7-cell2": {
+    "sha256": "6285a4dcae0de87c18613f99056a3ed0e08786cb7205b0de815fb104d1cd8dad",
+    "bytes": 1981351,
+    "exportSampling": "adaptive solver output"
+  },
+  "hdmi-D0-1485M-fast_lowZ-prbs7-cell2": {
+    "sha256": "ba867f64099c0ba0a05e5ddf57cafad2ec7a09b5fb7d8b31b120d0feae6fcc19",
+    "bytes": 2006833,
+    "exportSampling": "adaptive solver output"
+  },
+  "hdmi-D0-1485M-nominal-prbs7-cell2": {
+    "sha256": "814ecf1d65a15c4dc9ff5043bfeed0d76da3d91182cf53692b52004b39d1ea97",
+    "bytes": 2007201,
+    "exportSampling": "adaptive solver output"
+  },
+  "hdmi-D0-1485M-weak_highC-prbs7-cell2": {
+    "sha256": "ca896a9f18ac9dac21f5e63ad4e60b12a481139ebbb2421182b2a0bab6d414f9",
+    "bytes": 2008493,
+    "exportSampling": "adaptive solver output"
+  },
+  "hdmi-D0-251.75M-nominal-prbs7-cell2": {
+    "sha256": "113cda1599312a5b554659415575354606ecfde168f0c92eb30b722c81c00b47",
+    "bytes": 2012123,
+    "exportSampling": "adaptive solver output"
+  },
+  "hdmi-D0-742.5M-fast_lowZ-prbs7-cell2": {
+    "sha256": "33c1b8d10796304327a17d3daf2743d13e0e56fb675ecc6b3206b897df860ce5",
+    "bytes": 2005250,
+    "exportSampling": "adaptive solver output"
+  },
+  "hdmi-D0-742.5M-nominal-control00-cell2": {
+    "sha256": "8ad7b6932b9f34df542c81832fd00c298c097c8885ab8e6a5a3a3844b3008aa7",
+    "bytes": 2028299,
+    "exportSampling": "adaptive solver output"
+  },
+  "hdmi-D0-742.5M-nominal-prbs7-cell1": {
+    "sha256": "2f941e1cdf9f9b0fbd71acd0ce6d470a6ec534c7f6a3a4e816f28a07b2acab27",
+    "bytes": 2005207,
+    "exportSampling": "adaptive solver output"
+  },
+  "hdmi-D0-742.5M-nominal-prbs7-cell2": {
+    "sha256": "7043184f68bafa80f9d58be12e99e0b170bff742ef27f629b35a43529e5c356e",
+    "bytes": 2005294,
+    "exportSampling": "adaptive solver output"
+  },
+  "hdmi-D0-742.5M-weak_highC-prbs7-cell2": {
+    "sha256": "1e8c962b73fd6bac536292c72e9451607ea01826348bec250ae505b7a1f2278e",
+    "bytes": 2005654,
+    "exportSampling": "adaptive solver output"
+  },
+  "hdmi-D1-1485M-fast_lowZ-prbs7-cell2": {
+    "sha256": "07dc1d7e65d101be952c86732cb5a338848211882ac017c4e5793f6868c90f76",
+    "bytes": 2006197,
+    "exportSampling": "adaptive solver output"
+  },
+  "hdmi-D1-1485M-nominal-prbs7-cell2": {
+    "sha256": "76ae281d9d01f7a1f5a99388261aa8d9c8b517e1f41438c87f1717185d22b0bd",
+    "bytes": 2007025,
+    "exportSampling": "adaptive solver output"
+  },
+  "hdmi-D1-1485M-weak_highC-prbs7-cell2": {
+    "sha256": "d9ad6d610ad9fbc48b325a0c1199a7710c38e6b82a0ebe38ebc9afe3538656fc",
+    "bytes": 2007868,
+    "exportSampling": "adaptive solver output"
+  },
+  "hdmi-D1-251.75M-nominal-prbs7-cell2": {
+    "sha256": "4567b00768edbaaf1c351fb8cb2dcfbeed986e17070b3bec6352828d9c22604d",
+    "bytes": 2012382,
+    "exportSampling": "adaptive solver output"
+  },
+  "hdmi-D1-742.5M-fast_lowZ-prbs7-cell2": {
+    "sha256": "ddad6247da5d9602a31ab86f3cca32e2f2539e8925b6119f5b688e130cc73a15",
+    "bytes": 2005067,
+    "exportSampling": "adaptive solver output"
+  },
+  "hdmi-D1-742.5M-nominal-control00-cell2": {
+    "sha256": "a0cc1f3922f43ff534633ac54a750674f95ba197785d13f32e75620d19147e70",
+    "bytes": 2028451,
+    "exportSampling": "adaptive solver output"
+  },
+  "hdmi-D1-742.5M-nominal-prbs7-cell1": {
+    "sha256": "5057432ae9bf44ae287137356f1c6fdc5708c2ca06bcf838b749228b8d21ec65",
+    "bytes": 2005289,
+    "exportSampling": "adaptive solver output"
+  },
+  "hdmi-D1-742.5M-nominal-prbs7-cell2": {
+    "sha256": "05d1ce0e976812ee16bf3a5f29dc09ec691e8a0329fd7e3e1752a135f65bc42c",
+    "bytes": 2005234,
+    "exportSampling": "adaptive solver output"
+  },
+  "hdmi-D1-742.5M-weak_highC-prbs7-cell2": {
+    "sha256": "224a787b366e90a6dd8fdc938c7dd56b1aa5a956c1265546203ec392b99d88c9",
+    "bytes": 2005732,
+    "exportSampling": "adaptive solver output"
+  },
+  "hdmi-D2-1485M-fast_lowZ-prbs7-cell2": {
+    "sha256": "4e824221318a5bd05336658634a1e7e0383ed9e88d30ecc7e5eed4c3635a3dae",
+    "bytes": 2006008,
+    "exportSampling": "adaptive solver output"
+  },
+  "hdmi-D2-1485M-nominal-prbs7-cell2": {
+    "sha256": "7d83793b3bc3199a5ba55040d76f4fe8c691ce2007bbdb719074367bd9e5c5f0",
+    "bytes": 2007310,
+    "exportSampling": "adaptive solver output"
+  },
+  "hdmi-D2-1485M-weak_highC-prbs7-cell2": {
+    "sha256": "0e003c0de9abe67228316a6f12d8b564c63c68ecaf228022d3127caf0059ec85",
+    "bytes": 2007877,
+    "exportSampling": "adaptive solver output"
+  },
+  "hdmi-D2-251.75M-nominal-prbs7-cell2": {
+    "sha256": "e69ffde11597e97d542ef4e4fbdf1550a6f591f89aca249f1814e50afcb05d9a",
+    "bytes": 2012554,
+    "exportSampling": "adaptive solver output"
+  },
+  "hdmi-D2-742.5M-fast_lowZ-prbs7-cell2": {
+    "sha256": "f801aae198f18b5a08edafc4337cf1a068b746e63bff79658907a8e7699d33f5",
+    "bytes": 2005278,
+    "exportSampling": "adaptive solver output"
+  },
+  "hdmi-D2-742.5M-nominal-control00-cell2": {
+    "sha256": "b4de41cea5b321ca56790e193e9092d584768e1cf0174a02983fbeafc1eb90f8",
+    "bytes": 2028635,
+    "exportSampling": "adaptive solver output"
+  },
+  "hdmi-D2-742.5M-nominal-prbs7-cell1": {
+    "sha256": "713463a979513039c21d89c1b76ebe5643f89abde71f39468dcb3203514685b4",
+    "bytes": 2005476,
+    "exportSampling": "adaptive solver output"
+  },
+  "hdmi-D2-742.5M-nominal-prbs7-cell2": {
+    "sha256": "6eb9b4c0d6496c59eba03eabf7b8fb47cd086f8147380dfc2e60ae3d10188197",
+    "bytes": 2005536,
+    "exportSampling": "adaptive solver output"
+  },
+  "hdmi-D2-742.5M-weak_highC-prbs7-cell2": {
+    "sha256": "2bd286740d7107a1f29e49eecf3ba722e87e17a8b08a4491912ce3b7335f6681",
+    "bytes": 2005796,
+    "exportSampling": "adaptive solver output"
+  },
   "link-AUX0-controlled_IBIS-read": {
     "sha256": "086567eefcb710494b03faf7e442a24704cdbd527bc59d9772356a78d9e231c6",
     "bytes": 1800089,
@@ -917,11 +1092,6 @@
   "spark-lite-a-softstart-slow": {
     "sha256": "558d3689e8a5a2bb89d5a69852eec9b6f332ea4e28424fa9db2bd73605197820",
     "bytes": 3618630,
-    "exportSampling": "adaptive solver output"
-  },
-  "spark-lite-a-switch-cycle": {
-    "sha256": "ea08c89f407effe0b9510122263748bff77d34d7a05a01ba2d8bf8deeb878955",
-    "bytes": 4492275,
     "exportSampling": "adaptive solver output"
   },
   "spark-lite-a-Tab5-1A-budget": {

@@ -38,6 +38,12 @@ self.onmessage=async(event)=>{
    function interp(x){let lo=0,hi=time.length-1;while(hi-lo>1){const mid=(lo+hi)>>1;if(time[mid]<=x)lo=mid;else hi=mid}return recv[lo]+(recv[hi]-recv[lo])*(x-time[lo])/(time[hi]-time[lo])}
    const highs=[0,1,2].map(i=>interp(10e-9+(i+.25)*a.period));const lows=[0,1,2].map(i=>interp(10e-9+(i+.75)*a.period));
    summary={freq_Hz:a.freq_Hz,corner:a.corner,direction:a.direction,samples:time.length,sample_high_min_V:Math.min(...highs),sample_low_max_V:Math.max(...lows),threshold_ok:Math.min(...highs)>=a.thresholds[0]&&Math.max(...lows)<=a.thresholds[1]};
+  }else if(event.data.analysis?.kind==="hdmi"&&status===0&&errors.length===0){
+   const a=event.data.analysis,plot=parsed.plots.find(p=>p.name.startsWith("tran"));
+   if(!plot)throw Error("No HDMI transient plot");
+   const vv=Object.fromEntries(plot.vectors.map(v=>[v.name.toLowerCase(),v.real]));
+   if(vv.time[vv.time.length-1]<129*a.bit_period_s*.9999)throw Error("Incomplete HDMI transient");
+   summary={kind:"hdmi",lane:a.lane,rate_bps:a.rate_bps,corner:a.corner,samples:vv.time.length,scope:a.scope};
   }else if(event.data.analysis&&status===0&&errors.length===0){
    const a=event.data.analysis;const plot=parsed.plots.find(p=>p.name.startsWith("tran"));
    if(!plot)throw Error("No transient plot");

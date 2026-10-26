@@ -7,10 +7,6 @@
       "vcore_min_valid_input_V": 4.891468745631003,
       "vcore_max_valid_input_V": 4.99878215261811,
       "vout_max_V": 5.0357564433265285,
-      "diagnostics": {
-        "errors": [],
-        "warnings": []
-      },
       "within_numeric_voltage_limits": true,
       "conditions": {
         "model": "average",
@@ -39,10 +35,6 @@
       "vcore_min_valid_input_V": 4.891444286976325,
       "vcore_max_valid_input_V": 4.998809484392973,
       "vout_max_V": 5.0357372474414435,
-      "diagnostics": {
-        "errors": [],
-        "warnings": []
-      },
       "within_numeric_voltage_limits": true,
       "conditions": {
         "model": "average",
@@ -71,10 +63,6 @@
       "vcore_min_valid_input_V": 4.8914558818961655,
       "vcore_max_valid_input_V": 4.998796540868238,
       "vout_max_V": 5.035742945863138,
-      "diagnostics": {
-        "errors": [],
-        "warnings": []
-      },
       "within_numeric_voltage_limits": true,
       "conditions": {
         "model": "average",
@@ -103,10 +91,6 @@
       "vcore_min_valid_input_V": 4.812704503022163,
       "vcore_max_valid_input_V": 4.9320673258701495,
       "vout_max_V": 5.035718218368409,
-      "diagnostics": {
-        "errors": [],
-        "warnings": []
-      },
       "within_numeric_voltage_limits": true,
       "conditions": {
         "model": "average",
@@ -135,10 +119,6 @@
       "vcore_min_valid_input_V": 4.889534986311956,
       "vcore_max_valid_input_V": 5.000589910819533,
       "vout_max_V": 5.037500107668718,
-      "diagnostics": {
-        "errors": [],
-        "warnings": []
-      },
       "within_numeric_voltage_limits": true,
       "conditions": {
         "model": "average",
@@ -168,12 +148,6 @@
       "vcore_min_valid_input_V": 4.891454925442737,
       "vcore_max_valid_input_V": 4.99879779524708,
       "vout_max_V": 5.035761170814859,
-      "diagnostics": {
-        "errors": [],
-        "warnings": [
-          "Warning: Value of resistor rptc is too small, set to 1.000000e-12"
-        ]
-      },
       "within_numeric_voltage_limits": true,
       "conditions": {
         "model": "average",
