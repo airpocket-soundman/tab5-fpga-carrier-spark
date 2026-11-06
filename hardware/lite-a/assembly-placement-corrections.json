@@ -44,7 +44,7 @@
     "D7": {
       "x_mm": 95.0,
       "y_mm": 14.0,
-      "angle_deg": 180,
+      "angle_deg": 0,
       "lcsc": "C2286",
       "previous": {
         "x_mm": 95.0,
@@ -52,7 +52,9 @@
         "angle_deg": 0.0
       },
       "max_land_center_difference_mm": 0.03743799999999453,
-      "translation_policy": "Preserve verified component body origin: asymmetric recommended land lengths bias least-squares pad-center fitting."
+      "translation_policy": "Preserve verified component body origin: asymmetric recommended land lengths bias least-squares pad-center fitting.",
+      "previous_before_polarity_fix": 180,
+      "polarity_fix": "2026-11-06 polarity fix: rotation set to the KiCad rotation (pin-function match). The earlier value came from a pad-number match and was 180 degrees off for diodes/LEDs."
     },
     "J5": {
       "x_mm": 91.07503900000002,
@@ -264,7 +266,7 @@
     "D3": {
       "x_mm": 4.5,
       "y_mm": 39.0,
-      "angle_deg": 270,
+      "angle_deg": 90,
       "lcsc": "C699013",
       "previous": {
         "x_mm": 4.5,
@@ -272,7 +274,9 @@
         "angle_deg": 90.0
       },
       "max_land_center_difference_mm": 0.24991899999999845,
-      "translation_policy": "Preserve verified component body origin: asymmetric recommended land lengths bias least-squares pad-center fitting."
+      "translation_policy": "Preserve verified component body origin: asymmetric recommended land lengths bias least-squares pad-center fitting.",
+      "previous_before_polarity_fix": 270,
+      "polarity_fix": "2026-11-06 polarity fix: rotation set to the KiCad rotation (pin-function match). The earlier value came from a pad-number match and was 180 degrees off for diodes/LEDs."
     },
     "R28": {
       "x_mm": 73.2,
@@ -316,7 +320,7 @@
     "D2": {
       "x_mm": 21.0,
       "y_mm": 42.5,
-      "angle_deg": 270,
+      "angle_deg": 90,
       "lcsc": "C22452",
       "previous": {
         "x_mm": 21.0,
@@ -324,7 +328,9 @@
         "angle_deg": 90.0
       },
       "max_land_center_difference_mm": 0.5036780000000007,
-      "translation_policy": "Preserve verified component body origin: asymmetric recommended land lengths bias least-squares pad-center fitting."
+      "translation_policy": "Preserve verified component body origin: asymmetric recommended land lengths bias least-squares pad-center fitting.",
+      "previous_before_polarity_fix": 270,
+      "polarity_fix": "2026-11-06 polarity fix: rotation set to the KiCad rotation (pin-function match). The earlier value came from a pad-number match and was 180 degrees off for diodes/LEDs."
     },
     "R39": {
       "x_mm": 88.8,
@@ -368,7 +374,7 @@
     "D6": {
       "x_mm": 95.0,
       "y_mm": 16.0,
-      "angle_deg": 180,
+      "angle_deg": 0,
       "lcsc": "C2286",
       "previous": {
         "x_mm": 95.0,
@@ -376,7 +382,9 @@
         "angle_deg": 0.0
       },
       "max_land_center_difference_mm": 0.03743799999999453,
-      "translation_policy": "Preserve verified component body origin: asymmetric recommended land lengths bias least-squares pad-center fitting."
+      "translation_policy": "Preserve verified component body origin: asymmetric recommended land lengths bias least-squares pad-center fitting.",
+      "previous_before_polarity_fix": 180,
+      "polarity_fix": "2026-11-06 polarity fix: rotation set to the KiCad rotation (pin-function match). The earlier value came from a pad-number match and was 180 degrees off for diodes/LEDs."
     },
     "C1": {
       "x_mm": 13.5,
@@ -510,7 +518,7 @@
     "D8": {
       "x_mm": 95.0,
       "y_mm": 12.0,
-      "angle_deg": 180,
+      "angle_deg": 0,
       "lcsc": "C2286",
       "previous": {
         "x_mm": 95.0,
@@ -518,7 +526,9 @@
         "angle_deg": 0.0
       },
       "max_land_center_difference_mm": 0.03743799999999453,
-      "translation_policy": "Preserve verified component body origin: asymmetric recommended land lengths bias least-squares pad-center fitting."
+      "translation_policy": "Preserve verified component body origin: asymmetric recommended land lengths bias least-squares pad-center fitting.",
+      "previous_before_polarity_fix": 180,
+      "polarity_fix": "2026-11-06 polarity fix: rotation set to the KiCad rotation (pin-function match). The earlier value came from a pad-number match and was 180 degrees off for diodes/LEDs."
     },
     "C15": {
       "x_mm": 72.0,
@@ -757,7 +767,7 @@
     "D5": {
       "x_mm": 95.0,
       "y_mm": 18.0,
-      "angle_deg": 180,
+      "angle_deg": 0,
       "lcsc": "C2286",
       "previous": {
         "x_mm": 95.0,
@@ -765,7 +775,9 @@
         "angle_deg": 0.0
       },
       "max_land_center_difference_mm": 0.03743799999999453,
-      "translation_policy": "Preserve verified component body origin: asymmetric recommended land lengths bias least-squares pad-center fitting."
+      "translation_policy": "Preserve verified component body origin: asymmetric recommended land lengths bias least-squares pad-center fitting.",
+      "previous_before_polarity_fix": 180,
+      "polarity_fix": "2026-11-06 polarity fix: rotation set to the KiCad rotation (pin-function match). The earlier value came from a pad-number match and was 180 degrees off for diodes/LEDs."
     },
     "J4": {
       "x_mm": 57.189954000000135,
@@ -899,7 +911,7 @@
     "D4": {
       "x_mm": 5.5,
       "y_mm": 22.0,
-      "angle_deg": 0,
+      "angle_deg": 180,
       "lcsc": "C22452",
       "previous": {
         "x_mm": 5.5,
@@ -907,7 +919,9 @@
         "angle_deg": 180.0
       },
       "max_land_center_difference_mm": 0.5036780000000007,
-      "translation_policy": "Preserve verified component body origin: asymmetric recommended land lengths bias least-squares pad-center fitting."
+      "translation_policy": "Preserve verified component body origin: asymmetric recommended land lengths bias least-squares pad-center fitting.",
+      "previous_before_polarity_fix": 0,
+      "polarity_fix": "2026-11-06 polarity fix: rotation set to the KiCad rotation (pin-function match). The earlier value came from a pad-number match and was 180 degrees off for diodes/LEDs."
     },
     "C14": {
       "x_mm": 72.0,
@@ -1080,7 +1094,7 @@
     "D1": {
       "x_mm": 21.0,
       "y_mm": 62.5,
-      "angle_deg": 270,
+      "angle_deg": 90,
       "lcsc": "C22452",
       "previous": {
         "x_mm": 21.0,
@@ -1088,7 +1102,9 @@
         "angle_deg": 90.0
       },
       "max_land_center_difference_mm": 0.5036780000000007,
-      "translation_policy": "Preserve verified component body origin: asymmetric recommended land lengths bias least-squares pad-center fitting."
+      "translation_policy": "Preserve verified component body origin: asymmetric recommended land lengths bias least-squares pad-center fitting.",
+      "previous_before_polarity_fix": 270,
+      "polarity_fix": "2026-11-06 polarity fix: rotation set to the KiCad rotation (pin-function match). The earlier value came from a pad-number match and was 180 degrees off for diodes/LEDs."
     },
     "U8": {
       "x_mm": 36.7,
@@ -1336,5 +1352,6 @@
       "max_land_center_difference_mm": 0.08333066666666866,
       "translation_policy": "Preserve verified component body origin: asymmetric recommended land lengths bias least-squares pad-center fitting."
     }
-  }
+  },
+  "polarity_fix_2026-11-06": "D1-D8 rotations set to the KiCad rotation; see the carrier repository note r4_CPLダイオード極性調査_2026-11-06.md"
 }

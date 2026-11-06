@@ -48,5 +48,6 @@
     "inner_copper_um": 15.2,
     "dielectric_constant": 4.4
   },
-  "placement_frame": "corrected to official JLCPCB footprint frame"
+  "placement_frame": "corrected to official JLCPCB footprint frame",
+  "placement_polarity_fix": "2026-11-06: CPL rotations of D1-D8 (diodes, LEDs) corrected by 180 degrees in both variants; check polarity marks in the supplier order preview"
 }
